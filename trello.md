@@ -1,4 +1,4 @@
-# 5024 Programming Team
+# Programming Trello
 In the [programming board](https://trello.com/b/I951ouOI/programming), we both keep track of tasks and also plan meetings. Check the board frequently to make sure you know what has been assigned to you. If you need help on a task, add the `Requires Assistance` tag.
 
 ## Up for grabs
