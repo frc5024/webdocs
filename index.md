@@ -1,12 +1,21 @@
 Welcome to the webdocs index! Webdocs is where we keep all our extra documentation and reference data. Any team member can contribute by adding HTML or Markdown files to the repo at: [https://github.com/frc5024/webdocs](https://github.com/frc5024/webdocs)
 
-## Pages
- - [Trello Usage](./trello.html)
+## Team Related
+- [Trello Usage](./trello.html)
+  
+## 3rd Party Documentation
+ - [CTRE Doxygen](http://www.ctr-electronics.com/downloads/api/cpp/html/index.html)
+ - [CTRE Documentation](https://phoenix-documentation.readthedocs.io/en/latest/index.html)
+ - [WPIlib Doxygen](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
+
+## Robot Documentation
+ - [HATCHfield](https://frc5024.github.io/DeepSpace/)
+ - [MiniBot](https://frc5024.github.io/BaseBot)
+
+## Other
  - [List of "Blinky Things"](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144972-status-light-quick-reference)
  - [FMS Behind The Scenes](./fms.html)
  - [Event API](./eventapi.html)
  - [RoboRIO](./roborio.html)
  - [Depencancy URLs](./deps.txt)
- - [CTRE Doxygen](http://www.ctr-electronics.com/downloads/api/cpp/html/index.html)
- - [CTRE Documentation](https://phoenix-documentation.readthedocs.io/en/latest/index.html)
- - [WPIlib Doxygen](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
+ 
