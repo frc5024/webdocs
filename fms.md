@@ -1,6 +1,7 @@
 # FMS
 The following is a list of resources for learning about the Field Management System
- - [Whitepaper]()
+ - [Whitepaper](https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/705152-fms-whitepaper)
+ - [Documentation](http://wpilib.screenstepslive.com/s/fms)
  - [2014+ FMS video](https://youtu.be/fI_pscTtMVI)
  - [Match logs](http://wpilib.screenstepslive.com/s/fms/m/fieldmonitor/l/591663-viewing-match-logs)
  - [Robot status display](http://wpilib.screenstepslive.com/s/fms/m/fieldmonitor/l/592785-live-monitor)
