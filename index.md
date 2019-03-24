@@ -4,3 +4,4 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Trello Usage](./trello.html)
  - [List of "Blinky Things"](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144972-status-light-quick-reference)
  - [FMS Behind The Scenes](./fms.html)
+ - [Event API](./eventapi.html)
