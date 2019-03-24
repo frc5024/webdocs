@@ -6,6 +6,7 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
 ## 3rd Party Documentation
  - [CTRE Doxygen](http://www.ctr-electronics.com/downloads/api/cpp/html/index.html)
  - [CTRE Documentation](https://phoenix-documentation.readthedocs.io/en/latest/index.html)
+ - [CTRE Example Code](https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages)
  - [WPIlib Doxygen](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
 
 ## Robot Documentation
