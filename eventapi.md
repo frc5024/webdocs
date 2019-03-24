@@ -16,3 +16,8 @@ Bae64 encoding this would give:
 ```
 c2FtcGxldXNlcjo3ZWFhNjMzOC1hMDk3LTQyMjEtYWMwNC1iNjEyMGZjYzRkNDk=
 ```
+
+## Wrapper APIs
+While nobody talks about the event api, you have seen it used before under a different name. **The Blue Alliance API** is actually just a wrapper around the Events API. The only difference is that The Blue Alliance uses a Docker caching server (This is why the TBA app is always slightly out of date during an event).
+
+I ([@ewpratten](https://github.com/ewpratten)) also have my own wrapper at [api.retrylife.ca](https://api.retrylife.ca/frc) that allows for polling of more obscure data like the current season year (not the actual year) and team profile photos to name a few.
