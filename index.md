@@ -21,4 +21,7 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [RoboRIO](./roborio.html)
  - [Depencancy URLs](./deps.txt)
  - [DriverStation](./ds.html)
+ - [Dashboard Protocol](https://frcture.readthedocs.io/en/latest/driverstation/dashboard.html)
+ - [DSLOG File Format](https://frcture.readthedocs.io/en/latest/driverstation/logging.html)
+
  
