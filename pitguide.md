@@ -12,6 +12,15 @@ We mainly use WPIlib's *Command Based* structure, but some of our components hav
 ### Do we use GIT?
 YES! Feel free to view and contribute to our code at [github.com/frc5024](https://github.com/frc5024)
 
+### What camera do we use / Do we use a limelight?
+No. We do not use a limelight, we use a **Microsoft lifecam 3000**
+
+### What coprocessor do we use?
+We use a **raspberry pi 3B+** rinning WPIlib's vision image.
+
+### How do we network everything together?
+We have a gigabit ethernet switch mounted on the robot. This allows for the Pi and RIO to communicate with eachother and the radio.
+
 ### What is the most unique part of our code?
 (This will be the preferred answer once we are fully operational with our motion code.)
 
