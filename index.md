@@ -24,5 +24,7 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Dashboard Protocol](https://frcture.readthedocs.io/en/latest/driverstation/dashboard.html)
  - [DSLOG File Format](https://frcture.readthedocs.io/en/latest/driverstation/logging.html)
  - [PID Tuning](https://frc-pdr.readthedocs.io/en/latest/control/pid_control.html#proportional)
+ - [Slew Limit](https://www.chiefdelphi.com/t/acceleration-ramp-up-code/133556/8?u=ewpratten)
+ - [NSA Binary Analysis Tool](https://ghidra-sre.org/)
 
  
