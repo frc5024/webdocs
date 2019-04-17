@@ -13,6 +13,9 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
 ## Robot Documentation
  - [HATCHfield](https://frc5024.github.io/DeepSpace/)
  - [MiniBot](https://frc5024.github.io/BaseBot)
+  
+## Compilers and deployment
+ - [Disasembly](./ghidra.html)
 
 ## Other
  - [List of "Blinky Things"](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144972-status-light-quick-reference)
@@ -25,6 +28,6 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [DSLOG File Format](https://frcture.readthedocs.io/en/latest/driverstation/logging.html)
  - [PID Tuning](https://frc-pdr.readthedocs.io/en/latest/control/pid_control.html#proportional)
  - [Slew Limit](https://www.chiefdelphi.com/t/acceleration-ramp-up-code/133556/8?u=ewpratten)
- - [NSA Binary Analysis Tool](https://ghidra-sre.org/)
-
+ - [How to properly deadzone a joystick](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/)
+ - [Cool programming things from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
  
