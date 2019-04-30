@@ -7,7 +7,8 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [CTRE Doxygen](http://www.ctr-electronics.com/downloads/api/cpp/html/index.html)
  - [CTRE Documentation](https://phoenix-documentation.readthedocs.io/en/latest/index.html)
  - [CTRE Example Code](https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages)
- - [WPIlib Doxygen](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
+ - [WPIlib Doxygen (C++)](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
+ - [WPIlib Javadoc (Java)](https://first.wpi.edu/FRC/roborio/release/docs/java/)
  - [Pathfinder v1 Documentation](https://github.com/JacisNonsense/Pathfinder/wiki)
 
 ## Robot Documentation
