@@ -30,4 +30,4 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Slew Limit](https://www.chiefdelphi.com/t/acceleration-ramp-up-code/133556/8?u=ewpratten)
  - [How to properly deadzone a joystick](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/)
  - [Cool programming things from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
- 
+ - [Notable projects and code from other teams](./otherteams.html)
