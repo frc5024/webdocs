@@ -30,3 +30,12 @@ During sandstorm, we make use of motion profiling / motion control to help us ac
 
 We make use of an array of hal effect sensors, mounted on our robot's slider, to constantly keep track of the slider's position. This allows us to automatically home / recentre the slider during match play after a hatch has been placed. This way, the drivers allways know that the slider is in the same position when they need to use it again.
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>

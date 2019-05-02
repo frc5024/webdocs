@@ -7,3 +7,13 @@ This is a list of projects made by other teams that contain unique and insporati
  - [Jaci / 5333 / 5663 Pathfinder](https://github.com/JacisNonsense/Pathfinder)
  - [RoboRIO only coputer vision](https://github.com/JacisNonsense/neon_vision)
  - [5333 / 5663 DeepSpace code](https://github.com/CurtinFRC/2019-DeepSpace)
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>

@@ -7,3 +7,12 @@ All tasks in this list have not been claimed or assigned to a team member. Need 
 ## Ideas
 These are project ideas, offseason plans, and other things to think about or try out.
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>
