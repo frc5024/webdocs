@@ -33,3 +33,13 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Cool programming things from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
  - [Notable projects and code from other teams](./otherteams.html)
  - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>
