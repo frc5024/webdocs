@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/webdocs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/webdocs/" rel="alternate" type="text/html" /><updated>2019-05-03T13:54:41-04:00</updated><id>http://localhost:4000/webdocs/feed.xml</id><title type="html">Webdocs</title><subtitle>📄 General documentation for the team</subtitle><author><name>Raider Robotics</name></author><entry><title type="html">Field Management System (FMS)</title><link href="http://localhost:4000/webdocs/doc/FMS.html" rel="alternate" type="text/html" title="Field Management System (FMS)" /><published>2019-05-03T00:00:00-04:00</published><updated>2019-05-03T00:00:00-04:00</updated><id>http://localhost:4000/webdocs/doc/FMS</id><content type="html" xml:base="http://localhost:4000/webdocs/doc/FMS.html">&lt;p&gt;The following is a list of resources for learning about the Field Management System&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/705152-fms-whitepaper&quot;&gt;Whitepaper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wpilib.screenstepslive.com/s/fms&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/fI_pscTtMVI&quot;&gt;2014+ FMS video&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wpilib.screenstepslive.com/s/fms/m/fieldmonitor/l/591663-viewing-match-logs&quot;&gt;Match logs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wpilib.screenstepslive.com/s/fms/m/fieldmonitor/l/592785-live-monitor&quot;&gt;Robot status display&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.wix.ftanotepad18.ftanp&quot;&gt;Android app to control field from a tablet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;These are other random notes found by looking through source code and reverse-engineering FMS and it’s hardware&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The main FMS computer always has the ip address &lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.100.5&lt;/code&gt; and listens for udp connections from a driverstation on each alliance station&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-139497732-2&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+&lt;/script&gt;</content><author><name>Raider Robotics</name></author><summary type="html">The following is a list of resources for learning about the Field Management System Whitepaper Documentation 2014+ FMS video Match logs Robot status display Android app to control field from a tablet</summary></entry><entry><title type="html">DriverStation</title><link href="http://localhost:4000/webdocs/doc/driverstation.html" rel="alternate" type="text/html" title="DriverStation" /><published>2019-05-03T00:00:00-04:00</published><updated>2019-05-03T00:00:00-04:00</updated><id>http://localhost:4000/webdocs/doc/driverstation</id><content type="html" xml:base="http://localhost:4000/webdocs/doc/driverstation.html">&lt;p&gt;This document outlines various features of DriverStation and its networking protocol&lt;/p&gt;
+
+&lt;h2 id=&quot;using-driverstation&quot;&gt;Using DriverStation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/599678-driver-station-log-file-viewer&quot;&gt;Viewing Laptop-side Logs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/599749-roborio-brownout-and-understanding-current-draw&quot;&gt;Using the logs to prove that a brownout happened&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;comms-protocol&quot;&gt;Comms Protocol&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://frcture.readthedocs.io/en/latest/driverstation/ds_to_rio.html&quot;&gt;DS -&amp;gt; RIO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://frcture.readthedocs.io/en/latest/driverstation/rio_to_ds.html&quot;&gt;RIO -&amp;gt; DS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://frcture.readthedocs.io/en/latest/driverstation/ds_to_fms.html&quot;&gt;DS -&amp;gt; FMS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://frcture.readthedocs.io/en/latest/driverstation/fms_to_ds.html&quot;&gt;FMS -&amp;gt; DS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-139497732-2&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+&lt;/script&gt;</content><author><name>Raider Robotics</name></author><summary type="html">This document outlines various features of DriverStation and its networking protocol</summary></entry><entry><title type="html">FRC Events API</title><link href="http://localhost:4000/webdocs/doc/eventapi.html" rel="alternate" type="text/html" title="FRC Events API" /><published>2019-05-03T00:00:00-04:00</published><updated>2019-05-03T00:00:00-04:00</updated><id>http://localhost:4000/webdocs/doc/eventapi</id><content type="html" xml:base="http://localhost:4000/webdocs/doc/eventapi.html">&lt;p&gt;The event api allows pulling of match data almost immeadiatly after a match ends.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;The endpoint documentation can be found &lt;a href=&quot;https://frcevents2.docs.apiary.io/#&quot;&gt;HERE&lt;/a&gt;. &lt;strong&gt;NOTE:&lt;/strong&gt; This api requires an API key and login.&lt;/p&gt;
+
+&lt;h2 id=&quot;obtaining-an-api-key&quot;&gt;Obtaining an API key&lt;/h2&gt;
+&lt;p&gt;To get your api key, head over to the new request site &lt;a href=&quot;https://frc-events.firstinspires.org/services/API&quot;&gt;https://frc-events.firstinspires.org/services/API&lt;/a&gt; and request a token. Make sure to list 5024 as your frc team.&lt;/p&gt;
+
+&lt;p&gt;Your API key for HTTP access is created by adding your username to your key with a colon in the middle, then base64 encoding it. For example, if your username is &lt;code class=&quot;highlighter-rouge&quot;&gt;sampleuser&lt;/code&gt; and your key is &lt;code class=&quot;highlighter-rouge&quot;&gt;7eaa6338-a097-4221-ac04-b6120fcc4d49&lt;/code&gt; you would have this string:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sampleuser:7eaa6338-a097-4221-ac04-b6120fcc4d49
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bae64 encoding this would give:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;c2FtcGxldXNlcjo3ZWFhNjMzOC1hMDk3LTQyMjEtYWMwNC1iNjEyMGZjYzRkNDk=
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;wrapper-apis&quot;&gt;Wrapper APIs&lt;/h2&gt;
+&lt;p&gt;While nobody talks about the event api, you have seen it used before under a different name. &lt;strong&gt;The Blue Alliance API&lt;/strong&gt; is actually just a wrapper around the Events API. The only difference is that The Blue Alliance uses a Docker caching server (This is why the TBA app is always slightly out of date during an event).&lt;/p&gt;
+
+&lt;p&gt;I (&lt;a href=&quot;https://github.com/ewpratten&quot;&gt;@ewpratten&lt;/a&gt;) also have my own wrapper at &lt;a href=&quot;https://api.retrylife.ca/endpoints&quot;&gt;api.retrylife.ca&lt;/a&gt; that allows for polling of more obscure data like the current season year (not the actual year) and team profile photos to name a few.&lt;/p&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-139497732-2&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+&lt;/script&gt;</content><author><name>Raider Robotics</name></author><summary type="html">The event api allows pulling of match data almost immeadiatly after a match ends.</summary></entry></feed>

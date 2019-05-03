@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+weight: 1
+---
+
+<div class="home">
+
+  <div class="post-list">
+    <h3 class="post-link">Page {{ paginator.page }}:</h3>
+    {% for post in paginator.posts %}
+      {% unless post.ignore %}
+        <div class="post-container">
+          <div class="post-main">
+              <h3 class="post-link">
+                &nbsp&nbsp&nbsp&nbsp- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
+              {% comment %} <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> {% endcomment %}
+          </div>
+          {% comment %} <div class="excerpt">{{ post.excerpt }}</div> {% endcomment %}
+          {% comment %} <div class="tags">
+            {% for category in post.categories %}
+            <a class="tags">#{{ category }}&nbsp;</a>
+            {% endfor %}
+          </div> {% endcomment %}
+          {% comment %} <a class="read-more button button-primary" href="{{ post.url | prepend:site.baseurl }}">Read More</a> {% endcomment %}
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination centre">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fas fa-chevron-left"></i></a>
+    {% else %}
+    <i class="fas fa-chevron-left disabled"></i>
+    {% endif %}
+    <a class="current">{{ paginator.page }}</a>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next"><i class="fas fa-chevron-right"></i></a>
+    {% else %}
+    <i class="fas fa-chevron-right disabled"></i>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</div>

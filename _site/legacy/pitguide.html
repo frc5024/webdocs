@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Webdocs - Programming Pit Guide</title>
+  <meta name="description" content="📄 General documentation for the team">
+
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://imjac.in/cdn/blog.css">
+  
+  <link rel="canonical" href="http://localhost:4000/webdocs/legacy/pitguide">
+  <link rel="alternate" type="application/rss+xml" title="Webdocs" href="http://localhost:4000/webdocs/feed.xml" />
+
+  
+</head>
+
+  <body>
+
+    <main class="wrapper">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74118570-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74118570-3');
+</script>
+
+
+<nav class="navigation" id="navigation">
+  <section class="container">
+    <a class="button-clear" href="/webdocs/">Webdocs</a>
+
+    
+    <div style="float: right;">
+      
+        
+      
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+      
+        
+        
+        
+      
+      <a class="button button-clear" href="/blog/feed.xml">rss</a>
+    </div>
+  </section>
+  <br>
+</nav>
+
+
+        <section class="container body">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Programming Pit Guide</h1>
+  </header>
+
+  <article class="post-content">
+    <h1 id="programming-pit-guide">Programming Pit Guide</h1>
+<p>This document contains the answers to common questions asked by judges and other teams in the pits.</p>
+
+<h2 id="qa">Q&amp;A</h2>
+
+<h3 id="what-programming-language-does-the-team-use">What programming language does the team use?</h3>
+<p>We use <strong>both C++ and Python</strong>. Any code that directly inferfaces with the hardware or sensors is in C++, everything else, including our vision and logging systems, are written in Python (3.7 to be exact)</p>
+
+<h3 id="what-robot-base--type-do-we-use">What robot base / type do we use?</h3>
+<p>We mainly use WPIlib’s <em>Command Based</em> structure, but some of our components have moved to our own <em>Stack Based</em> structure.</p>
+
+<h3 id="do-we-use-git">Do we use GIT?</h3>
+<p>YES! Feel free to view and contribute to our code at <a href="https://github.com/frc5024">github.com/frc5024</a></p>
+
+<h3 id="what-camera-do-we-use--do-we-use-a-limelight">What camera do we use / Do we use a limelight?</h3>
+<p>No. We do not use a limelight, we use a <strong>Microsoft lifecam 3000</strong></p>
+
+<h3 id="what-coprocessor-do-we-use">What coprocessor do we use?</h3>
+<p>We use a <strong>raspberry pi 3B+</strong> rinning WPIlib’s vision image.</p>
+
+<h3 id="how-do-we-network-everything-together">How do we network everything together?</h3>
+<p>We have a gigabit ethernet switch mounted on the robot. This allows for the Pi and RIO to communicate with eachother and the radio.</p>
+
+<h3 id="what-is-the-most-unique-part-of-our-code">What is the most unique part of our code?</h3>
+<p>(This will be the preferred answer once we are fully operational with our motion code.)</p>
+
+<p>During sandstorm, we make use of motion profiling / motion control to help us achive a fast second hatch placement. This is done by motion profiling from the cargo ship to the area infront of the loading station. To correct for any possible driver error, we then find our relitive location from the load-in port via our vision system. This feeds data into a secondary, real-time generated, motion profiling system that brings us in the rest of the way to the hatch waiting for us.</p>
+
+<p>(The following answer is how we won Innovation in Control at Ryerson.)</p>
+
+<p>We make use of an array of hal effect sensors, mounted on our robot’s slider, to constantly keep track of the slider’s position. This allows us to automatically home / recentre the slider during match play after a hatch has been placed. This way, the drivers allways know that the slider is in the same position when they need to use it again.</p>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>
+
+
+  </article>
+
+</div>
+        </section>
+
+      
+
+    </div>
+
+  </body>
+
+</html>

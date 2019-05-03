@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Webdocs - FMS Event API</title>
+  <meta name="description" content="📄 General documentation for the team">
+
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://imjac.in/cdn/blog.css">
+  
+  <link rel="canonical" href="http://localhost:4000/webdocs/legacy/eventapi">
+  <link rel="alternate" type="application/rss+xml" title="Webdocs" href="http://localhost:4000/webdocs/feed.xml" />
+
+  
+</head>
+
+  <body>
+
+    <main class="wrapper">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74118570-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74118570-3');
+</script>
+
+
+<nav class="navigation" id="navigation">
+  <section class="container">
+    <a class="button-clear" href="/webdocs/">Webdocs</a>
+
+    
+    <div style="float: right;">
+      
+        
+      
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+      
+        
+        
+        
+      
+      <a class="button button-clear" href="/blog/feed.xml">rss</a>
+    </div>
+  </section>
+  <br>
+</nav>
+
+
+        <section class="container body">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">FMS Event API</h1>
+  </header>
+
+  <article class="post-content">
+    <h1 id="fms-event-api">FMS Event API</h1>
+<p>The event api allows pulling of match data almost immeadiatly after a match ends.</p>
+
+<h2 id="documentation">Documentation</h2>
+<p>The endpoint documentation can be found <a href="https://frcevents2.docs.apiary.io/#">HERE</a>. <strong>NOTE:</strong> This api requires an API key and login.</p>
+
+<h2 id="obtaining-an-api-key">Obtaining an API key</h2>
+<p>To get your api key, head over to the new request site <a href="https://frc-events.firstinspires.org/services/API">https://frc-events.firstinspires.org/services/API</a> and request a token. Make sure to list 5024 as your frc team.</p>
+
+<p>Your API key for HTTP access is created by adding your username to your key with a colon in the middle, then base64 encoding it. For example, if your username is <code class="highlighter-rouge">sampleuser</code> and your key is <code class="highlighter-rouge">7eaa6338-a097-4221-ac04-b6120fcc4d49</code> you would have this string:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sampleuser:7eaa6338-a097-4221-ac04-b6120fcc4d49
+</code></pre></div></div>
+
+<p>Bae64 encoding this would give:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c2FtcGxldXNlcjo3ZWFhNjMzOC1hMDk3LTQyMjEtYWMwNC1iNjEyMGZjYzRkNDk=
+</code></pre></div></div>
+
+<h2 id="wrapper-apis">Wrapper APIs</h2>
+<p>While nobody talks about the event api, you have seen it used before under a different name. <strong>The Blue Alliance API</strong> is actually just a wrapper around the Events API. The only difference is that The Blue Alliance uses a Docker caching server (This is why the TBA app is always slightly out of date during an event).</p>
+
+<p>I (<a href="https://github.com/ewpratten">@ewpratten</a>) also have my own wrapper at <a href="https://api.retrylife.ca/frc">api.retrylife.ca</a> that allows for polling of more obscure data like the current season year (not the actual year) and team profile photos to name a few.</p>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139497732-2');
+</script>
+
+
+  </article>
+
+</div>
+        </section>
+
+      
+
+    </div>
+
+  </body>
+
+</html>
