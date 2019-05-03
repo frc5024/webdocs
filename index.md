@@ -13,7 +13,7 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
 
 ## Robot Documentation
  - [HATCHfield](https://frc5024.github.io/DeepSpace/)
- - [MiniBot](https://frc5024.github.io/BaseBot)
+ - [MiniBot (2018)](https://frc5024.github.io/BaseBot)
   
 ## Compilers and deployment
  - [Disasembly](./ghidra.html)
@@ -33,6 +33,7 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Cool programming things from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
  - [Notable projects and code from other teams](./otherteams.html)
  - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
+ - [Installing WPILib](http://wpilib.screenstepslive.com/s/currentCS/m/java/l/1027503-installing-c-and-java-development-tools-for-frc)
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
