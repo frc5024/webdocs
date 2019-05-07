@@ -35,6 +35,8 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
  - [Notable projects and code from other teams](./otherteams.html)
  - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
  - [Installing WPILib](http://wpilib.screenstepslive.com/s/currentCS/m/java/l/1027503-installing-c-and-java-development-tools-for-frc)
+ - [Interesting parts of other team's code](./teamnotes.html)
+ - [GradleRIO Behind The Scenes](https://docs.google.com/presentation/d/1fnfz4hCvnvDJb1606Ee7VkJCn4IvJDUIbYxkTxR6YsM/edit?usp=sharing)
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
