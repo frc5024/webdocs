@@ -15,6 +15,12 @@
    - [WPIlib Javadoc (Java)](https://first.wpi.edu/FRC/roborio/release/docs/java/)
    - [Pathfinder v1 Documentation](https://github.com/JacisNonsense/Pathfinder/wiki)
 
+ - Robot Programming Quick-Reference
+   - [Introduction](docs/learn/README)
+   - [The Various Robot Bases](docs/learn/robotbase)
+   - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
+
+
  - Slideshows and Presentations
    - [GradleRIO Behind The Scenes](https://docs.google.com/presentation/d/1fnfz4hCvnvDJb1606Ee7VkJCn4IvJDUIbYxkTxR6YsM/edit?usp=sharing)
   
@@ -33,10 +39,9 @@
    - [PID Tuning](https://frc-pdr.readthedocs.io/en/latest/control/pid_control.html#proportional)
    - [Slew Limit](https://www.chiefdelphi.com/t/acceleration-ramp-up-code/133556/8?u=ewpratten)
    - [How to properly deadzone a joystick](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/)
-   - [Cool programming things from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
-   - [Notable projects and code from other teams](docs/otherteams)
+   - [Cool ideas from other teams](https://www.chiefdelphi.com/t/best-frc-programming-featues/353571/)
+   - [Notable projects from other teams](docs/otherteams)
    - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
-   - [Installing WPILib](http://wpilib.screenstepslive.com/s/currentCS/m/java/l/1027503-installing-c-and-java-development-tools-for-frc)
    - [Interesting parts of other team's code](docs/teamnotes)
 
 
