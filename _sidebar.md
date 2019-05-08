@@ -2,6 +2,10 @@
    - [HATCHfield](https://frc5024.github.io/DeepSpace/)
    - [MiniBot (2018)](https://frc5024.github.io/BaseBot)
    - [MiniBot (2019/2020)](https://frc5024.github.io/MiniBot/) 
+  
+ - Team Reference
+   - [Introduction](docs/reference/README)
+   - [Version Control](docs/reference/vcs)
  
  - 3rd Party Documentation 
    - [CTRE Doxygen](http://www.ctr-electronics.com/downloads/api/cpp/html/index.html)
