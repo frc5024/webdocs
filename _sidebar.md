@@ -43,6 +43,7 @@
    - [Notable projects from other teams](docs/otherteams)
    - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
    - [Interesting parts of other team's code](docs/teamnotes)
+   - [Using ShuffleBoard](https://firstmncsa.org/2018/12/15/debugging-shuffleboard/)
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
