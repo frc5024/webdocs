@@ -21,6 +21,6 @@ This final robot base is specifically designed for use with the Python programmi
 If you would like to read more about the MagicBot framework, take a look at the [robotpy docs](https://robotpy.readthedocs.io/en/stable/frameworks/magicbot.html)
 
 ## What Do We Use?
-We currently use the Command-based framework for all of our code. This is also the framework that will be covered fully in this guide.
+We currently use the Command-based framework for all of our code. 
 
-We use the Command-based framework because it clearly seperates the various functions of the robot, and forces the team to write effective, and clean code.
+We use the Command-based framework because it clearly seperates the various functions of the robot, and allows the team to write effective, and clean code.
