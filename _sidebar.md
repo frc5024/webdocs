@@ -19,6 +19,7 @@
    - [Introduction](docs/learn/README)
    - [The Various Robot Bases](docs/learn/robotbase)
    - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
+   - [Using a cubic deadband](docs/learn/cubicdeadband)
 
 
  - Slideshows and Presentations
@@ -44,6 +45,10 @@
    - [Java robot simulator](https://github.com/pjreiniger/SnobotSim)
    - [Interesting parts of other team's code](docs/teamnotes)
    - [Using ShuffleBoard](https://firstmncsa.org/2018/12/15/debugging-shuffleboard/)
+   - [Learn to program with Java](https://www.codecademy.com/learn/learn-java)
+
+ - Meeting Tools
+   - [Get Meeting Code](docs/verify)
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
