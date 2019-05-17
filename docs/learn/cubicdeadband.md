@@ -11,14 +11,14 @@ double rotation = oi.getTurn();
 rotation = (Math.abs(rotation) > deadband)? 0.0 : rotation;
 ```
 
-Although this worked, it raised the following problem that ws mentioned by [mimirgames.com](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/). This causes a hard cut
-in the motor input. For example, with a deadband of `0.1`, when the joystick reads `0.09` the output will be `0.0%`, but with a reading of `0.11`, the output will be `0.11%`. While this does not seem 
-too bad, it causes a loss of fine control from the driver. They can only go `0.0%` or `0.1%`. Nothing in between.
+Although this worked, it raised the following problem that was mentioned by [mimirgames](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/). This causes a hard cut
+in the motor input. For example, with a deadband of `0.1`: when the joystick reads `0.09` the output will be `0.0%`, but with a reading of `0.11`, the output will be `0.11%`. While this does not seem 
+too bad, it causes a loss of fine control from the driver's input. They can only go `0.0%` or `0.1%`. Nothing in between.
 
 ![Linear Cutoff graph](http://www.mimirgames.com/wp-content/uploads/2017/06/LinearDeadband.png)
 
 ## The Solution
-For most inputs, small changes of small values matter much more than small changes of big values. For example, going 5 mph faster then intended is much more serious when parking a car than when one is driving on the freeway (source: [mimirgames.com](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/)).
+For most inputs, small changes of small values matter much more than small changes of big values. For example, going 5 mph faster then intended is much more serious when parking a car than when one is driving on the freeway (source: [mimirgames](http://www.mimirgames.com/articles/games/joystick-input-and-using-deadbands/)).
 
 To achive this, we use this "fancy equation". Essentially, we pass our input through a cubic scaling funciton:
 ```java
@@ -31,5 +31,5 @@ output = ((w * x * x * x + (1.0 - w) * x) - (abs(x) / x) * (w * d * d * d + (1.0
 
 
 ## Visualization
-This visualization of thecubic scaling funciton can be interacted with via the two labled sliders. To view the full Desmos project, click [here](https://www.desmos.com/calculator/awcputalxe)
+This visualization of our cubic scaling funciton can be interacted with via the two labled sliders. To view the full Desmos project, click [here](https://www.desmos.com/calculator/awcputalxe)
 <iframe src="https://www.desmos.com/calculator/lb22nxp9vn?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
