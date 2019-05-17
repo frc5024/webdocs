@@ -26,7 +26,7 @@ w = percision //(0 <= w <= 1)
 d = deadband //(0 <= d <= 0.9)
 x = joystick_input //(-1 <= x <= 1)
 
-output = ((w * x * x * x + (1.0 - w) * x) - (abs(x) / x) * (w * d * d * d + (1.0 - w) * d)) / (1.0 - (w * d * d * d + (1.0 - w) * d))
+output = ((w * (x ^ 3)  + (1.0 - w) * x) - (abs(x) / x) * (w * (d ^ 3) + (1.0 - w) * d)) / (1.0 - (w * (d ^ 3) + (1.0 - w) * d))
 ```
 
 
