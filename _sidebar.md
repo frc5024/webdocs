@@ -46,6 +46,7 @@
    - [Interesting parts of other team's code](docs/teamnotes)
    - [Using ShuffleBoard](https://firstmncsa.org/2018/12/15/debugging-shuffleboard/)
    - [Learn to program with Java](https://www.codecademy.com/learn/learn-java)
+   - [Automatically recording matches](https://wpilib.screenstepslive.com/s/currentCS/m/shuffleboard/l/1021944-controlling-data-recording)
 
  - Meeting Tools
    - [Get Meeting Code](docs/verify)
