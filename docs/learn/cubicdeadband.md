@@ -22,7 +22,7 @@ For most inputs, small changes of small values matter much more than small chang
 
 To achive this, we use this "fancy equation". Essentially, we pass our input through a cubic scaling funciton:
 ```java
-w = percision //(0 <= w <= 1)
+w = precision //(0 <= w <= 1)
 d = deadband //(0 <= d <= 0.9)
 x = joystick_input //(-1 <= x <= 1)
 
@@ -31,5 +31,5 @@ output = ((w * (x ^ 3)  + (1.0 - w) * x) - (abs(x) / x) * (w * (d ^ 3) + (1.0 - 
 
 
 ## Visualization
-This visualization of our cubic scaling funciton can be interacted with via the two labled sliders. To view the full Desmos project, click [here](https://www.desmos.com/calculator/awcputalxe)
+This visualization of our cubic scaling function can be interacted with via the two labled sliders. To view the full Desmos project, click [here](https://www.desmos.com/calculator/awcputalxe)
 <iframe src="https://www.desmos.com/calculator/lb22nxp9vn?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
