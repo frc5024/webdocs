@@ -21,6 +21,9 @@
    - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
    - [Using a cubic deadband](docs/learn/cubicdeadband)
 
+ - Robot Mesurements
+   - [MiniBot](docs/mesurements/minibot)
+
 
  - Slideshows and Presentations
    - [GradleRIO Behind The Scenes](https://docs.google.com/presentation/d/1fnfz4hCvnvDJb1606Ee7VkJCn4IvJDUIbYxkTxR6YsM/edit?usp=sharing)
