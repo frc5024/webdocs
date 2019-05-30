@@ -21,6 +21,10 @@
    - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
    - [Using a cubic deadband](docs/learn/cubicdeadband)
 
+ - Guides
+   - [Configuring an OpenMesh Router](docs/guides/openmesh)
+   - [Flashing a RoboRIO](docs/guides/roborio)
+
  - Robot Mesurements
    - [MiniBot](docs/mesurements/minibot)
 
@@ -35,9 +39,6 @@
    - [RoboRIO](docs/roborio)
    - [Depencancy URLs](docs/deps)
    - [DriverStation](docs/ds)
-
- - "Behind the Scenes"
-   - [VisionStream](docs/bts/visionstream)
 
  - Other
    - [List of "Blinky Things"](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144972-status-light-quick-reference)
