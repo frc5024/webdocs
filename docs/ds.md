@@ -11,6 +11,9 @@ This document outlines various features of DriverStation and its networking prot
  - [DS -> FMS](https://frcture.readthedocs.io/en/latest/driverstation/ds_to_fms.html)
  - [FMS -> DS](https://frcture.readthedocs.io/en/latest/driverstation/fms_to_ds.html)
 
+## The "Secret DS protocol"
+There is a protocol built into the driverstation that is used by gradleRIO and NetowrkTables to find the robot's ip address. To read this data, open a TCP connection to `localhost` on port `1742` on a computer running driverstation. A JSON string will be returned containing the magical data!
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
 <script>
