@@ -1,5 +1,6 @@
  - Robot Documentation
    - [HATCHfield](https://frc5024.github.io/DeepSpace/)
+   - [HATCHfield Offseason](https://frc5024.github.io/DeepSpace-Offseason/)
    - [MiniBot (2018)](https://frc5024.github.io/BaseBot)
    - [MiniBot (2019/2020)](https://frc5024.github.io/MiniBot/) 
   
@@ -54,6 +55,7 @@
    - [Using ShuffleBoard](https://firstmncsa.org/2018/12/15/debugging-shuffleboard/)
    - [Learn to program with Java](https://www.codecademy.com/learn/learn-java)
    - [Automatically recording matches](https://wpilib.screenstepslive.com/s/currentCS/m/shuffleboard/l/1021944-controlling-data-recording)
+   - [Interesting FRC blogs](docs/blogs)
 
  - Meeting Tools
    - [Get Meeting Code](docs/verify)
