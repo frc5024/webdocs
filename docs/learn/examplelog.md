@@ -49,3 +49,20 @@ INFO: [DriveTrain] NeutralMode has been set to: Coast
 ROBOT: [ConnectionMonitor] The robot has lost connection!
 INFO: [Ledring] Wanted state set to: kStrobe
 ```
+
+## CAN errors due to running in simulation mode instead of on a RoboRIO
+
+This is perfectly normal to see. It can be ignored while running a simulation.
+
+```
+CTR: CAN frame not received/too-stale.
+        Talon SRX 1 GetSelectedSensorPosition
+CTR: CAN frame not received/too-stale.
+        Talon SRX 1 GetSelectedSensorPosition
+CTR: CAN frame not received/too-stale.
+        Talon SRX 3 GetSelectedSensorPosition
+CTR: CAN frame not received/too-stale.
+        Talon SRX 3 GetSelectedSensorPosition
+CTR: Firm Vers could not be retrieved. Use Phoenix Tuner to check ID and firmware(CRF) version. 
+        Talon SRX 6
+```
