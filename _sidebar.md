@@ -22,6 +22,7 @@
    - [The Various Robot Bases](docs/learn/robotbase)
    - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
    - [Using a cubic deadband](docs/learn/cubicdeadband)
+   - [Example robot logs](docs/learn/examplelog)
 
  - Guides
    - [Configuring an OpenMesh Router](docs/guides/openmesh)
