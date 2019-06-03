@@ -14,6 +14,7 @@
    - [CTRE Example Code](https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages)
    - [WPIlib Doxygen (C++)](http://first.wpi.edu/FRC/roborio/release/docs/cpp/classfrc_1_1TimedCommand.html)
    - [WPIlib Javadoc (Java)](https://first.wpi.edu/FRC/roborio/release/docs/java/)
+   - [WPIlib Developer docs](https://frc-docs.readthedocs.io/en/develop/index.html)
    - [Pathfinder v1 Documentation](https://github.com/JacisNonsense/Pathfinder/wiki)
 
  - Robot Programming Quick-Reference
