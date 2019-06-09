@@ -1,8 +1,7 @@
- - Robot Documentation
-   - [HATCHfield](https://frc5024.github.io/DeepSpace/)
-   - [HATCHfield Offseason](https://frc5024.github.io/DeepSpace-Offseason/)
-   - [MiniBot (2018)](https://frc5024.github.io/BaseBot)
-   - [MiniBot (2019/2020)](https://frc5024.github.io/MiniBot/) 
+ - Robots
+   - [MiniBot](docs/robots/minibot)
+   - [HATCHfield](docs/robots/hatchfield)
+   - [Q*Bert](docs/robots/qbert)
   
  - Team Reference
    - [Introduction](docs/reference/README)
@@ -27,10 +26,6 @@
  - Guides
    - [Configuring an OpenMesh Router](docs/guides/openmesh)
    - [Flashing a RoboRIO](docs/guides/roborio)
-
- - Robot Mesurements
-   - [MiniBot](docs/mesurements/minibot)
-
 
  - Slideshows and Presentations
    - [GradleRIO Behind The Scenes](https://docs.google.com/presentation/d/1fnfz4hCvnvDJb1606Ee7VkJCn4IvJDUIbYxkTxR6YsM/edit?usp=sharing)
