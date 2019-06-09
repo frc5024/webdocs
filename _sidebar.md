@@ -1,6 +1,6 @@
  - Robots
-   - [MiniBot](docs/robots/minibot)
-   - [HATCHfield](docs/robots/hatchfield)
+   - [MiniBot](docs/robots/MiniBot)
+   - [HATCHfield](docs/robots/HATCHfield)
    - [Q*Bert](docs/robots/qbert)
   
  - Team Reference
