@@ -2,7 +2,7 @@
 MiniBot is our prototyping robot. It is also used for teaching programming to new members.
 
  - [2018 Code](https://github.com/frc5024/BaseBot)
- - [2019 Code](https://github.com/frc5024/BaseBot)
+ - [2019 Code](https://github.com/frc5024/MiniBot)
  - [2018 Documentation](https://frc5024.github.io/BaseBot)
  - [2019 Documentation](https://frc5024.github.io/MiniBot)
  - [Devices Info](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNXmLZ6TMKyh8pCZ2ZJN3x7I5hXcg-0HT3JiDnms5ENWb6s7vyFm9MXh_seRtbzuc7z5v_FUPCkeOU/pubhtml?gid=1728477354&single=true)

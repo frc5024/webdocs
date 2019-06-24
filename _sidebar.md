@@ -22,6 +22,7 @@
    - [Reading From an Xbox Controller](docs/learn/xboxcontroller)
    - [Using a cubic deadband](docs/learn/cubicdeadband)
    - [Example robot logs](docs/learn/examplelog)
+   - [Using a solenoid](https://frc-docs.readthedocs.io/en/latest/docs/software/actuators/solenoids.html)
 
  - Guides
    - [Configuring an OpenMesh Router](docs/guides/openmesh)
