@@ -1,3 +1,10 @@
+---
+layout: default
+title: "OpenMesh Configuration"
+parent: "Guides"
+permalink: /docs/guides/openmesh
+---
+
 # Configuring an OpenMesh Router
 
 Also refered to as "Flashing a radio", the routers we use on our robots (models: om5p-an and om5p-ac) must run a custom linux-based image provided by FIRST. This guide is a slightly modified version of [118's pac-bot guide](https://ccisdrobonauts.org/uploads/12/8f/128f1b30391ad7a196606e2b57a1a6b1.pdf).
@@ -11,7 +18,7 @@ The Radio Flashing Utility provides many options for various routers. These are 
 
 In most cases, you will want the driver's laptop to connect directly to your robot, so the radio on your robot will need to be configured as an access point. Due to the age of our laptops, we always use the 2.4GHZ band for our network.
 
-![Screenshot of the Radio configuration Utility](../../images/radioconfig.png)
+![Screenshot of the Radio configuration Utility](/webdocs/assets/img/radioconfig.png)
 
 After connecting directly to the radio via ethernet and waiting for the radio to power on,
 
@@ -30,7 +37,7 @@ At each competition, you will need to use the Radio Configuration Kiosk set-up b
 
 During our offseason events and demonstrations that involve many robots in a small space, using a central router for everyone is a great way to reduce interference, and extend the range of every robot.
 
-![Offseason radio configuration](../../images/fieldradio.png)
+![Offseason radio configuration](/webdocs/assets/img/fieldradio.png)
 
 After connecting your laptop directly to the radio and waiting for the radio to power on,
 

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Robot Bases"
+parent: "Learning"
+permalink: /docs/learn/robotbase
+---
+
+
 # The Various Robot Bases
 All good robot programs start with a good base. This is called the RobotBase.
 
@@ -16,11 +24,13 @@ TimedRobot is the same as IterativeRobot except that it **uses a timer (Notifier
 While based on the TimedRobot base class, **the command based robot programming style is recommended for most teams**. It makes it easy to break up the program into Commands which each implement some robot behavior such as raising an arm to some position, driving for some distance, etc. It also makes the program easily extensible and testable. The RobotBuilder utility (included with the eclipse plugins) provides an easy way of organizing the program. The dashboards (SmartDashboard and Shuffleboard) allow you to easily debug and test command based programs.
 
 ## The MagicBot Robot
-This final robot base is specifically designed for use with the Python programming language. Due to the fact that this framework only exsists in the Python library, we will not cover it in this guide.
+This final robot base is specifically designed for use with the Python programming language. Due to the fact that this framework only exists in the Python library, we will not cover in our documentation.
 
 If you would like to read more about the MagicBot framework, take a look at the [robotpy docs](https://robotpy.readthedocs.io/en/stable/frameworks/magicbot.html)
 
 ## What Do We Use?
-We currently use the Command-based framework for all of our code. 
+We currently use a modified version of the Command-based framework for all of our code. 
 
-We use the Command-based framework because it clearly seperates the various functions of the robot, and allows the team to write effective, and clean code.
+We use the Command-based framework because it clearly separates the various functions of the robot, and allows the team to write effective, and clean code.
+
+For anyone curious about the modifications, go talk to the programming team lead. The specific details are somewhat complex and not required knowledge.

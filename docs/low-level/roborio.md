@@ -1,4 +1,11 @@
-# RoboRIO
+---
+layout: default
+title: "RoboRIO Hardware"
+parent: "Low Level"
+permalink: /docs/lowlevel/roborio
+---
+
+# RoboRIO Hardware
 The RoboRIO is a black (grey) box that does magical things. We put code in, it makes things move. These documents and notes describe low-level details about the RoboRIO and how it works.
 
  - [User manual](http://www.ni.com/pdf/manuals/374474a.pdf)
@@ -6,13 +13,3 @@ The RoboRIO is a black (grey) box that does magical things. We put code in, it m
  - [Simplified Manual](https://mililanirobotics.gitbooks.io/frc-electrical-bible/content/roboRIO/index.html)
  - [Guide for accessing the HAL without WPIlib](http://download.ni.com/support/softlib//labview/labview_roborio/2015/C_Support_for_roboRIO_User_Guide.pdf)
  - [(very) Low level FPGA Info](https://frcture.readthedocs.io/en/latest/fpga/index.html)
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-139497732-2');
-</script>

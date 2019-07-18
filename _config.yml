@@ -1,0 +1,37 @@
+# Site settings
+title: 5024 Docs
+description: >- # this means to ignore newlines until "baseurl:"
+  The central collection of documentation for 5024, and notes from various team members.
+  If you have a question, there is a good chance you can find the answer here.
+baseurl: "/webdocs/" # the subpath of your site, e.g. /blog
+url: "https://frc5024.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: frc5024
+
+# Build settings
+markdown: kramdown
+theme: just-the-docs
+
+aux_links:
+  "Edit on GitHub":
+    - "https://github.com/frc5024/webdocs"
+  
+color_scheme: nil
+
+ga_tracking: UA-139497732-2
+
+search_enabled: true
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Cubic Deadbands"
+parent: "Learning"
+permalink: /docs/learn/deadbands
+---
+
 # Cubic Deadbands
 In our robot code, we make use of deadbands to account for the fact that our joysticks drift slightly.
 
@@ -32,4 +39,8 @@ output = ((w * (x ^ 3)  + (1.0 - w) * x) - (abs(x) / x) * (w * (d ^ 3) + (1.0 - 
 
 ## Visualization
 This visualization of our cubic scaling function can be interacted with via the two labled sliders. To view the full Desmos project, click [here](https://www.desmos.com/calculator/awcputalxe)
+
+<!-- There is a rendering issue with one of our plugins... This should work -->
+<!-- {% raw %}
 <iframe src="https://www.desmos.com/calculator/lb22nxp9vn?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+{% endraw %} -->

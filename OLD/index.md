@@ -47,3 +47,21 @@ Welcome to the webdocs index! Webdocs is where we keep all our extra documentati
 
   gtag('config', 'UA-139497732-2');
 </script>
+
+This is a list of projects made by other teams that contain unique and insporational features.
+
+ - [1241 Pathfinder](https://github.com/RickHansenRobotics/FRC-2018-1241-PB)
+ - [cheesy-arena](https://github.com/team254/cheesy-arena)
+ - [254's 2018 code](https://github.com/Team254/FRC-2018-Public/tree/master/src/main/java/com/team254/frc2018)
+ - [Jaci / 5333 / 5663 Pathfinder](https://github.com/JacisNonsense/Pathfinder)
+ - [RoboRIO only coputer vision](https://github.com/JacisNonsense/neon_vision)
+ - [5333 / 5663 DeepSpace code](https://github.com/CurtinFRC/2019-DeepSpace)
+
+
+## Variable DriveTrain sensitivity based on elevator height
+Team: 254
+
+Description:<br>
+If the elevator is currently sitting at a position above the defined threshold, rotation speed will be decreased.
+
+Code Link: https://github.com/Team254/FRC-2018-Public/blob/master/src/main/java/com/team254/frc2018/Robot.java (line 295)

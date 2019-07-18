@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Version Control"
+parent: "Team Reference"
+permalink: /docs/reference/vcs
+---
+
 # Version Control for 5024
 
 ## GitKracken

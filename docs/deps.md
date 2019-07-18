@@ -1,4 +1,11 @@
-# Dependancy URLs
+---
+layout: default
+title: "Vendor Dependencies"
+nav_order: 6
+permalink: /docs/vendordeps
+---
+
+# Dependency URLs
 These URLs are used by WPIlib to add external libraries to our codebase. 
 They are hard to remember, so here is a list of the ones we use:
 
