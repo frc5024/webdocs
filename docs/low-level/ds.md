@@ -15,13 +15,3 @@ This document outlines various features of DriverStation and its networking prot
 There is a protocol built into the driverstation that is used by gradleRIO and NetowrkTables to find the robot's ip address. To read this data, open a TCP connection to `localhost` on port `1742` on a computer running driverstation. A JSON string will be returned containing the magical data!
 
 This was found in the [NetworkTables Native library](https://github.com/wpilibsuite/allwpilib/blob/221011494d202770ad275c88cd7380119505e65d/ntcore/src/main/native/cpp/DsClient.cpp#L73-L144)
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139497732-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-139497732-2');
-</script>

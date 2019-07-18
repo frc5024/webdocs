@@ -1,3 +1,10 @@
+---
+layout: default
+title: "RoboRIO Configuration"
+parent: "Guides"
+permalink: /docs/guides/roborio
+---
+
 # Flashing a RoboRIO
 
 This guide is based off of [118's pac-bot guide](https://ccisdrobonauts.org/uploads/12/8f/128f1b30391ad7a196606e2b57a1a6b1.pdf).

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "OpenMesh Configuration"
+parent: "Guides"
+permalink: /docs/guides/openmesh
+---
+
 # Configuring an OpenMesh Router
 
 Also refered to as "Flashing a radio", the routers we use on our robots (models: om5p-an and om5p-ac) must run a custom linux-based image provided by FIRST. This guide is a slightly modified version of [118's pac-bot guide](https://ccisdrobonauts.org/uploads/12/8f/128f1b30391ad7a196606e2b57a1a6b1.pdf).
