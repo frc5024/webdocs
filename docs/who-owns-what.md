@@ -2,7 +2,7 @@
 layout: default
 title: "Who Owns What?"
 nav_order: 7
-permalink: /docs/vendordeps
+permalink: /docs/who-owns-what
 ---
 
 # Who owns what?
