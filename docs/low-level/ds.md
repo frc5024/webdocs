@@ -1,3 +1,10 @@
+---
+layout: default
+title: "DriverStation"
+parent: "Low Level"
+permalink: /docs/lowlevel/driverstation
+---
+
 # DriverStation
 This document outlines various features of DriverStation and its networking protocol
 

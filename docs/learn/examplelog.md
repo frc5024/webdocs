@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Logfile Examples"
+parent: "Learning"
+permalink: /docs/learn/example-logs
+---
+
 # Example robot log
 
 We like logs. A lot. Here are some example logs from various situations.

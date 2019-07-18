@@ -1,4 +1,11 @@
-# FMS
+---
+layout: default
+title: "Field Management System"
+parent: "Low Level"
+permalink: /docs/lowlevel/fms
+---
+
+# Field Management System
 The following is a list of resources for learning about the Field Management System
  - [Whitepaper](https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/705152-fms-whitepaper)
  - [Documentation](http://wpilib.screenstepslive.com/s/fms)

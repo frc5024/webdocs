@@ -1,3 +1,10 @@
+---
+layout: default
+title: "MiniBot"
+parent: "Our Robots"
+permalink: /docs/robots/minibot
+---
+
 # MiniBot
 MiniBot is our prototyping robot. It is also used for teaching programming to new members.
 

@@ -1,5 +1,11 @@
+---
+layout: default
+title: "RoboRIO Hardware"
+parent: "Low Level"
+permalink: /docs/lowlevel/roborio
+---
 
-# RoboRIO
+# RoboRIO Hardware
 The RoboRIO is a black (grey) box that does magical things. We put code in, it makes things move. These documents and notes describe low-level details about the RoboRIO and how it works.
 
  - [User manual](http://www.ni.com/pdf/manuals/374474a.pdf)

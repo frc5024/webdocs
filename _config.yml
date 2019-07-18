@@ -1,18 +1,25 @@
 # Site settings
-title: Your awesome title
+title: 5024 Docs
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jekyll
+  The central collection of documentation for 5024, and notes from various team members.
+  If you have a question, there is a good chance you can find the answer here.
+baseurl: "/webdocs/" # the subpath of your site, e.g. /blog
+url: "https://frc5024.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: frc5024
 
 # Build settings
 markdown: kramdown
 theme: just-the-docs
 
+aux_links:
+  "Edit on GitHub":
+    - "https://github.com/frc5024/webdocs"
+  
+color_scheme: nil
+
 ga_tracking: UA-139497732-2
+
+search_enabled: true
 
 plugins:
   - jekyll-feed
