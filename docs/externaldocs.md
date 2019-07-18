@@ -2,7 +2,7 @@
 layout: default
 title: "External Documentation"
 nav_order: 6
-permalink: /docs/lowlevel/eventsapi
+permalink: /docs/external
 ---
 
 # External Documentation
