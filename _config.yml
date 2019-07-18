@@ -18,6 +18,8 @@ aux_links:
   
 color_scheme: nil
 
+exclude: [ "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "LICENSE.txt","README.md", "Rakefile", "OLD/"]
+
 ga_tracking: UA-139497732-2
 
 search_enabled: true
