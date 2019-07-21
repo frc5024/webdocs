@@ -18,3 +18,7 @@ For documentation on how to create nav structures, UI elements, and other more a
 
 ## Adding your name to the contributors list
 Simply ass your github username (all lowercase) to the `authors` array defined in the page's header. If an `authors` array is not present, it will not be displayed.
+
+This works for every registered member since 2019 kickoff, including mentors.
+
+To add a member, fill out their info in `_data/members.yml`
