@@ -3,6 +3,7 @@ layout: default
 title: "MiniBot"
 parent: "Our Robots"
 permalink: /docs/robots/minibot
+authors: ['ewpratten']
 ---
 
 # MiniBot

@@ -3,6 +3,7 @@ layout: default
 title: "External Documentation"
 nav_order: 6
 permalink: /docs/external
+authors: ['ewpratten']
 ---
 
 # External Documentation

@@ -3,6 +3,7 @@ layout: default
 title: "RoboRIO Hardware"
 parent: "Low Level"
 permalink: /docs/lowlevel/roborio
+authors: ['ewpratten']
 ---
 
 # RoboRIO Hardware

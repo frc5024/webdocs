@@ -3,6 +3,7 @@ layout: default
 title: "DriverStation"
 parent: "Low Level"
 permalink: /docs/lowlevel/driverstation
+authors: ['ewpratten']
 ---
 
 # DriverStation

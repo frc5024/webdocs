@@ -15,3 +15,6 @@ This site is now using [Jekyll](https://jekyllrb.com/) for it's backend. Anythin
 
 ## Theme docs
 For documentation on how to create nav structures, UI elements, and other more advanced settings, check out the [theme documentation](https://pmarsceill.github.io/just-the-docs/)
+
+## Adding your name to the contributors list
+Simply ass your github username (all lowercase) to the `authors` array defined in the page's header. If an `authors` array is not present, it will not be displayed.

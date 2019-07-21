@@ -3,6 +3,7 @@ layout: default
 title: "Version Control"
 parent: "Team Reference"
 permalink: /docs/reference/vcs
+authors: ['ewpratten', 'slownie']
 ---
 
 # Version Control for 5024

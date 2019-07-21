@@ -3,6 +3,7 @@ layout: default
 title: "RoboRIO Configuration"
 parent: "Guides"
 permalink: /docs/guides/roborio
+authors: ['ewpratten']
 ---
 
 # Flashing a RoboRIO

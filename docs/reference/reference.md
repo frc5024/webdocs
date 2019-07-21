@@ -4,6 +4,7 @@ title: "Team Reference"
 nav_order: 3
 has_children: true
 permalink: /docs/reference
+authors: ['ewpratten']
 ---
 
 # Team Reference

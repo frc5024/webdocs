@@ -3,6 +3,7 @@ layout: default
 title: "Watt"
 parent: "Our Robots"
 permalink: /docs/robots/watt
+authors: ['ewpratten']
 ---
 
 # Watt

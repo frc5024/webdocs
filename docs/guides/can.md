@@ -3,6 +3,7 @@ layout: default
 title: "Configuring the CAN network"
 parent: "Guides"
 permalink: /docs/guides/can-config
+authors: ['ewpratten']
 ---
 
 # Configuring the CAN network

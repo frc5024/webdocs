@@ -3,6 +3,7 @@ layout: default
 title: "Events API"
 parent: "Low Level"
 permalink: /docs/lowlevel/eventsapi
+authors: ['ewpratten']
 ---
 
 # FMS Event API

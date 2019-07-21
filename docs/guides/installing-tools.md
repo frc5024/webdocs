@@ -3,6 +3,7 @@ layout: default
 title: "Installing Development Tools"
 parent: "Guides"
 permalink: /docs/guides/installing-tools
+authors: ['ewpratten']
 ---
 
 # Installing FRC Development Tools

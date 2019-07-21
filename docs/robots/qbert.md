@@ -3,6 +3,7 @@ layout: default
 title: "Q*bert"
 parent: "Our Robots"
 permalink: /docs/robots/qbert
+authors: ['ewpratten']
 ---
 
 # Q*Bert

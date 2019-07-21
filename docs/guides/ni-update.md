@@ -3,6 +3,7 @@ layout: default
 title: "Installing DriverStation"
 parent: "Guides"
 permalink: /docs/guides/ni-update
+authors: ['ewpratten']
 ---
 
 # Installing DriverStation

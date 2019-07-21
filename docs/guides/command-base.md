@@ -3,6 +3,7 @@ layout: default
 title: "CommandBased Programming"
 parent: "Guides"
 permalink: /docs/guides/command-base
+authors: ['ewpratten']
 ---
 
 # CommandBased Programming

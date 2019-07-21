@@ -3,6 +3,7 @@ layout: default
 title: "Whitepapers"
 nav_order: 9
 permalink: /docs/whitepapers
+authors: ['ewpratten']
 ---
 
 # Whitepapers

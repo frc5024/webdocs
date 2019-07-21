@@ -3,6 +3,7 @@ layout: default
 title: "HATCHfield"
 parent: "Our Robots"
 permalink: /docs/robots/hatchfield
+authors: ['ewpratten']
 ---
 
 # HATCHfield

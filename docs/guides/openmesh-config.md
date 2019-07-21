@@ -3,6 +3,7 @@ layout: default
 title: "OpenMesh Configuration"
 parent: "Guides"
 permalink: /docs/guides/openmesh
+authors: ['ewpratten']
 ---
 
 # Configuring an OpenMesh Router

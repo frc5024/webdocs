@@ -3,6 +3,7 @@ layout: default
 title: "Vendor Dependencies"
 nav_order: 6
 permalink: /docs/vendordeps
+authors: ['ewpratten']
 ---
 
 # Dependency URLs

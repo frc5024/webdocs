@@ -3,6 +3,7 @@ layout: default
 title: "Herbert"
 parent: "Our Robots"
 permalink: /docs/robots/herbert
+authors: ['ewpratten']
 ---
 
 # Herbert

@@ -3,6 +3,7 @@ layout: default
 title: "Who Owns What?"
 nav_order: 7
 permalink: /docs/who-owns-what
+authors: ['ewpratten']
 ---
 
 # Who owns what?

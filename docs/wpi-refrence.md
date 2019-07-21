@@ -3,6 +3,7 @@ layout: default
 title: "WPIlib reference"
 nav_order: 8
 permalink: /docs/wpilib
+authors: ['ewpratten']
 ---
 
 # WPIlib Reference

@@ -1,0 +1,63 @@
+# Mentors
+lordmichaelmort:
+  name: Michael Feeney
+  is_lead: false
+  is_mentor: true
+  github: LordMichaelmort
+
+johnlownie:
+  name: John Lownie
+  is_lead: false
+  is_mentor: true
+  github: johnlownie
+
+awpratten:
+  name: Warren Pratten
+  is_lead: false
+  is_mentor: true
+  github: awpratten
+
+
+# Members
+
+ewpratten:
+  name: Evan Pratten
+  is_lead: true
+  is_mentor: false
+  github: ewpratten
+
+slownie:
+  name: Sam Lownie
+  is_lead: false
+  is_mentor: false
+  github: slownie
+
+beardedfish:
+  name: Darian Benam 
+  is_lead: false
+  is_mentor: false
+  github: beardedfish
+
+faceincake:
+  name: Matthew Eppel
+  is_lead: false
+  is_mentor: false
+  github: faceincake
+
+parsa-salimi :
+  name: Parsa Salimi 
+  is_lead: false
+  is_mentor: false
+  github: parsa-salimi 
+
+retrax24:
+  name: Carter Tomlenovich
+  is_lead: false
+  is_mentor: false
+  github: retrax24
+
+rsninja722 :
+  name: James Nickoli
+  is_lead: false
+  is_mentor: false
+  github: rsninja722 

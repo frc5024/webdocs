@@ -3,6 +3,7 @@ layout: default
 title: "Guinevere"
 parent: "Our Robots"
 permalink: /docs/robots/guinevere
+authors: ['ewpratten']
 ---
 
 # Guinevere
