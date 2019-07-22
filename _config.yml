@@ -26,6 +26,15 @@ search_enabled: true
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+
+# Admin page configuration
+jekyll_admin:
+  hidden_links:
+    - posts
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
