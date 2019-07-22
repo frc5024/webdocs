@@ -3,6 +3,7 @@ layout: default
 title: "Robot Bases"
 parent: "Learning"
 permalink: /docs/learn/robotbase
+authors: ['ewpratten']
 ---
 
 

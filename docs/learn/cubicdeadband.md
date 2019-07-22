@@ -3,6 +3,7 @@ layout: default
 title: "Cubic Deadbands"
 parent: "Learning"
 permalink: /docs/learn/deadbands
+authors: ['ewpratten']
 ---
 
 # Cubic Deadbands

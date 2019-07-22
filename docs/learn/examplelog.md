@@ -3,6 +3,7 @@ layout: default
 title: "Logfile Examples"
 parent: "Learning"
 permalink: /docs/learn/example-logs
+authors: ['ewpratten']
 ---
 
 # Example robot log
