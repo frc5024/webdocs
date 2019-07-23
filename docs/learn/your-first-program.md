@@ -14,6 +14,7 @@ Open Visual Studio Code, and follow [WPIlib's instructions](https://frc-docs.rea
 We will be writing a simple tank drive with two wheels, one on each side of the robot. Here is a visual:
 ![Team 2605's Tank drive visual]({{site.baseurl}}/assets/img/tank-drive.png)
 
+
 ## Preparing the project
 WPIlib adds some extra template code to a new project to help teams out. We will not be needing that.
 
