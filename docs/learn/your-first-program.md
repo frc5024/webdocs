@@ -166,4 +166,68 @@ public void arcadeDrive(double speed, double rotation) {
 This passes `speed` and `rotation` to `drive`'s `arcadeDrive` method.
 
 ## Feeding joystick data to the DriveTrain
-WIP
+We now need to read the joystick data, and push it to the DriveTrain. This can be done with a [Command]({{site.baseurl}}/docs/guides/command-base#commands).
+
+Create a new file called `DriveControl.java` in the `src/main/java/frc/robot/commands` folder, and add the following template code.
+```java
+package frc.robot.commands;
+
+import edu.wpi.first.wpilibj.command.Command;
+import frc.robot.Robot;
+
+public class DriveControl extends Command {
+
+	@Override
+	protected void execute() {
+        
+	}
+
+	@Override
+	protected boolean isFinished() {
+		return false;
+	}
+
+}
+```
+
+This is a basic command class. As long as `isFinished` returns `false`, the `execute` method will be called once every 20ms by the robot. We can use this to our advantage by writing some code to read our joystick data here.
+
+Inside the `execute` method, add these two lines. They will call the `getThrottle` and `getTurn` methods we made in the first section, and store the data.
+```java
+double speed = Robot.m_oi.getThrottle();
+double rotation = Robot.m_oi.getTurn();
+```
+
+Now, we just need to pass this data to the subsystem we just made. This can be done with the following line. It will call the `arcadeDrive` method we just made, and give it our speed and rotation valuse.
+```java
+Robot.m_driveTrain.raiderDrive(speed, rotation);
+```
+
+## Adding the subsystem to the robot
+That's almost everything! We just need to write a few lines of code to tie everything together.
+
+In the `src/main/java/frc/robot/Robot.java` file, we need to add the following to the list of imports in order to import our new Command and Subsystem:
+```java
+import frc.robot.commands.DriveControl;
+import frc.robot.subsystems.DriveTrain;
+```
+
+Next, we need to tell the robot that we made a subsystem and command. Add the following under the line that says `public static OI m_oi;`:
+```java
+public static DriveTrain m_driveTrain;
+
+DriveControl m_driveControl;
+```
+
+Finally, we need to create the two objects
+```java
+m_driveControl = new DriveControl();
+m_driveTrain = new DriveTrain();
+```
+
+These go under the `m_oi = new OI();` line.
+
+## Conclusion
+That's it! You now have your first piece of robot code (and it can actually drive!).
+
+This guide was not designed to teach you how to program, but to show you around the general file structure of our robot code, and where each type of code goes. Feel free to come talk to a returning mentor, or team lead to see what you can add to your code next.
