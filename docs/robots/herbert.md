@@ -8,6 +8,7 @@ authors: ['ewpratten']
 
 # Herbert
 Herbert was our robot for the 2015 season.
+2015's game was Recycle Rush.
 
  - [Code](https://github.com/frc5024/RecycleRush)
 

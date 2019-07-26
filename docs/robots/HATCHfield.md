@@ -8,6 +8,7 @@ authors: ['ewpratten']
 
 # HATCHfield
 HATCHfield was our robot for the 2019 season. 
+2019's game was Deep Space.
 
  - [Code](https://github.com/frc5024/DeepSpace)
  - [Offseason Code](https://github.com/frc5024/DeepSpace-Offseason)

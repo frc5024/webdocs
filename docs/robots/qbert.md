@@ -8,6 +8,7 @@ authors: ['ewpratten']
 
 # Q*Bert
 Q*Bert was our robot for the 2018 season.
+2018's game was Power Up.
 
  - [Code](https://github.com/frc5024/PowerUp)
  - [Offseason Code](https://github.com/frc5024/PowerUp-Offseason)

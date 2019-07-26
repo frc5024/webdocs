@@ -43,9 +43,9 @@ Before you make a new branch, make sure you have the newest code on your compute
 
 Never push to the master branch without a code review. The master branch should always contain fully operation and review code that has been approved by a mentor, unless a mentor specifically asks you to push some non-reviewed code.
 
-Do NOT do work in the master branch on your computer. If you need to change code, do it in a separate branch. THis makes it easier if you need to copy your code to another computer and will make sure that you don't get errors while pushing code.
+Do NOT do work in the master branch on your computer. If you need to change code, do it in a separate branch. This makes it easier if you need to copy your code to another computer and will make sure that you don't get errors while pushing code.
 
-When pushing code to the robot, always push the master branch, unless you are testing something on your own branch. At the end of the day / meeting, make sure the robot has the newest code from master pushed to it in case another subteam needs to use the robot.
+When pushing code to the robot, always push the master branch, unless you are testing something on your own branch. At the end of the day/meeting, make sure the robot has the newest code from master pushed to it in case another subteam needs to use the robot.
 
 ## Further Learning
 To learn more about GIT, including setting up a GitHub account, and working with a team, take a look at [WPIlib's GIT Documentation](https://frc-docs.readthedocs.io/en/latest/docs/software/basic-programming/git-getting-started.html).

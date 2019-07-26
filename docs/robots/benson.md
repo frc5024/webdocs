@@ -8,6 +8,7 @@ authors: ['ewpratten']
 
 # Benson
 Benson was our robot for the 2014 season.
+2014's game was Aerial Assist.
 
  - [Code](https://github.com/frc5024/AerialAssist)
 
