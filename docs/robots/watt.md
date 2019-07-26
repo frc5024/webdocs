@@ -4,6 +4,7 @@ title: "Watt"
 parent: "Our Robots"
 permalink: /docs/robots/watt
 authors: ['ewpratten']
+nav_order: -4
 ---
 
 # Watt

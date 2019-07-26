@@ -4,6 +4,7 @@ title: "Q*bert"
 parent: "Our Robots"
 permalink: /docs/robots/qbert
 authors: ['ewpratten']
+nav_order: -5
 ---
 
 # Q*Bert

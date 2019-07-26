@@ -4,6 +4,7 @@ title: "Benson"
 parent: "Our Robots"
 permalink: /docs/robots/benson
 authors: ['ewpratten']
+nav_order: -2
 ---
 
 # Benson

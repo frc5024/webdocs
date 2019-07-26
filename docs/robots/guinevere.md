@@ -4,6 +4,7 @@ title: "Guinevere"
 parent: "Our Robots"
 permalink: /docs/robots/guinevere
 authors: ['ewpratten']
+nav_order: -3
 ---
 
 # Guinevere

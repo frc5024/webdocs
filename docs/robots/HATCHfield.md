@@ -4,6 +4,7 @@ title: "HATCHfield"
 parent: "Our Robots"
 permalink: /docs/robots/hatchfield
 authors: ['ewpratten']
+nav_order: -7
 ---
 
 # HATCHfield

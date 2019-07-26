@@ -4,6 +4,7 @@ title: "Herbert"
 parent: "Our Robots"
 permalink: /docs/robots/herbert
 authors: ['ewpratten']
+nav_order: -1
 ---
 
 # Herbert
