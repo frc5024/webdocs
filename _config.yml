@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The central collection of documentation for 5024, and notes from various team members.
   If you have a question, there is a good chance you can find the answer here.
 baseurl: "/webdocs/" # the subpath of your site, e.g. /blog
-url: "https://frc5024.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cs.5024.ca" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: frc5024
 
 # Build settings
