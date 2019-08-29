@@ -10,6 +10,3 @@ This website is the home of notes and documentation from the 5024 programming te
 
 If you are having a problem with WPIlib, CTRE, or Pathfinder, or someone has told you to check the "list of blinky things", take a look at the [External Documentation](/webdocs/docs/external) section.
 
-
-## -- Why is this site broken? --
-A dependency error is currently mis-rendering our css. we are working on a fix.
