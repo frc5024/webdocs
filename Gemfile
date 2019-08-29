@@ -32,3 +32,7 @@ gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-redirect-from'
 gem 'jemoji'
 gem 'jekyll-mentions'
+
+
+# gem "nokogiri", "~> 1.7.0"
+
