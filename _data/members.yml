@@ -26,6 +26,12 @@ ewpratten:
   is_mentor: false
   github: ewpratten
 
+exvacuum:
+  name: Silas Bartha
+  is_lead: false
+  is_mentor: false
+  github: exvacuum
+
 slownie:
   name: Sam Lownie
   is_lead: false
@@ -50,11 +56,11 @@ parsa-salimi :
   is_mentor: false
   github: parsa-salimi 
 
-retrax24:
+hyperliskdev:
   name: Carter Tomlenovich
   is_lead: false
   is_mentor: false
-  github: retrax24
+  github: hyperliskdev
 
 rsninja722 :
   name: James Nickoli
