@@ -16,3 +16,6 @@ This is a common issue on Linux systems due to versioning issues. Generally, the
  - Uninstall Gradle from the system
  - Install the latest Gradle package from [their website](https://gradle.org/install/) NOT your package manager
  - Run `gradle wrapper` in the project folder
+
+## Motors are behiving unexpectadly
+There is a high chance that this is due to motor safety being enabled. To fix this, call the `.setSafetyEnabled(false)` method on all SpeedController, and DifferentialDrive objects related to, or using that motor.
