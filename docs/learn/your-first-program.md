@@ -143,12 +143,12 @@ public class DriveTrain extends Subsystem {
 }
 ```
 
-You will also need to add the CTRE vendordep. Feel free to ignore this step until you want to test the code. At that point, ask a returning team member for help.
+You will also need to add the [CTRE vendordep](http://devsite.ctr-electronics.com/maven/release/com/ctre/phoenix/Phoenix-latest.json). To do this, open the command palette using ctrl+shift+P and search "vendor", select "Manage Vendor Libraries", then "Install New Library (Online)", and paste the previous link. See the [vendor dependencies]({{site.baseurl}}/docs/vendordeps) page for more information. Feel free to ignore this step until you want to test the code. At that point, ask a returning team member for help.
 
 The code you have added is just a template, and follows the same style as the Operator Interface. Next, we need to add two motors and link them together. Add the following to the `DriveTrain` method:
 ```java
 left = new WPI_TalonSRX(1);
-right = new WPI_TalonSRX(2);
+right = new WPI_TalonSRX(3);
 
 drive = new DifferentialDrive(left, right);
 drive.setSafetyEnabled(false);
@@ -200,7 +200,7 @@ double rotation = Robot.m_oi.getTurn();
 
 Now, we just need to pass this data to the subsystem we just made. This can be done with the following line. It will call the `arcadeDrive` method we just made, and give it our speed and rotation valuse.
 ```java
-Robot.m_driveTrain.raiderDrive(speed, rotation);
+Robot.m_driveTrain.arcadeDrive(speed, rotation);
 ```
 
 ## Adding the subsystem to the robot
@@ -219,13 +219,22 @@ public static DriveTrain m_driveTrain;
 DriveControl m_driveControl;
 ```
 
-Finally, we need to create the two objects
+Next, we need to create the two objects
 ```java
 m_driveControl = new DriveControl();
 m_driveTrain = new DriveTrain();
 ```
 
 These go under the `m_oi = new OI();` line.
+
+Finally, add the following code to the `teleopInit()` method we created earlier in the `Robot` class:
+```java
+if (m_driveControl != null){
+    m_driveControl.start();
+}
+```
+
+This code checks that `m_driveControl` has not started, and then starts it. Without this, the code we have written will not work.
 
 ## Conclusion
 That's it! You now have your first piece of robot code (and it can actually drive!).
