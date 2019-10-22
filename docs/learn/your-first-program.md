@@ -3,7 +3,7 @@ layout: default
 title: "Your First Program"
 parent: "Learning"
 permalink: /docs/learn/your-first-program
-authors: ['ewpratten']
+authors: ['ewpratten', 'ExVaccum', 'slownie']
 ---
 
 # Writing your first robot program
