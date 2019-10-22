@@ -9,7 +9,7 @@ authors: ['ewpratten']
 # Writing your first robot program
 This lesson assumes that you have already installed the FRC [development tools]({{site.baseurl}}/docs/guides/installing-tools) on your computer, or you are using a computer provided by the team. 
 
-Open Visual Studio Code, and follow [WPIlib's instructions](https://frc-docs.readthedocs.io/en/latest/docs/software/wpilib-overview/creating-robot-program.html#creating-a-new-wpilib-project) for starting a new project. Make sure to set the team number to `5024`, Java as your programming language, and `Command Robot` as your template.
+Open Visual Studio Code, and follow [WPIlib's instructions](https://frc-docs.readthedocs.io/en/latest/docs/software/wpilib-overview/creating-robot-program.html#creating-a-new-wpilib-project) for starting a new project. Choose 'Template' when selecting a project type. Make sure to set the team number to `5024`, Java as your programming language, and `Command Robot` 
 
 We will be writing a simple tank drive with two wheels, one on each side of the robot. Here is a visual:
 ![Team 2605's Tank drive visual]({{site.baseurl}}/assets/img/tank-drive.png)
@@ -60,9 +60,9 @@ You now have a blank slate of a class. The `Robot` class is automatically called
 Deciding what to do with a robot is hard. Luckily, our testing robot has some wheels (as described above). So let's write some code to make our bot move.
 
 ## Controls
-Firstly, we should start off with some controls. Our drive team uses Xbox controllers to drive our robots, so we will be writing some code for one of these controllers. To drive our bot, we will be using just a stingle joystick on our Xbox controller. This is not the configuration we use for competitions, but is simpler to teach.
+Firstly, we should start off with some controls. Our drive team uses Xbox controllers to drive our robots, so we will be writing some code for one of these controllers. To drive our bot, we will be using just a stingle joystick on our Xbox controller. This is not the configuration we use for competitions, but it is simpler to teach.
 
-Lets add some code to the Operator Interface file (`src/main/java/frc/robot/OI.java`). This file is where we define every human input.
+Let's add some code to the Operator Interface (OI) file (`src/main/java/frc/robot/OI.java`). This file is where we define every human input.
 ```java
 package frc.robot;
 
@@ -84,18 +84,18 @@ public class OI {
 }
 ```
 
-We start off with out imports.
+Let's start off with out imports.
 ```java
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID;
 ```
-These simply tell the JVM that we will be using the `XboxController` and `GenericHID` helper classes from WPIlib.
+These imports simply tell the JVM that we will be using the `XboxController` and `GenericHID` helper classes from WPIlib.
 
 We need to specify which controller we are reading from (we usually have more than one controller plugged in at a time).
 ```java
 public XboxController m_driverController = new XboxController(0);
 ```
-In this case, we are reading from controller `0`.
+In this case, we are reading from controller `0` (The driver's controller).
 
 Next, we define our `getThrottle` method.
 ```java
