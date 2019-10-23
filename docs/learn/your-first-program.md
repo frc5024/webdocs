@@ -3,13 +3,13 @@ layout: default
 title: "Your First Program"
 parent: "Learning"
 permalink: /docs/learn/your-first-program
-authors: ['ewpratten']
+authors: ['ewpratten', 'ExVaccum', 'slownie']
 ---
 
 # Writing your first robot program
 This lesson assumes that you have already installed the FRC [development tools]({{site.baseurl}}/docs/guides/installing-tools) on your computer, or you are using a computer provided by the team. 
 
-Open Visual Studio Code, and follow [WPIlib's instructions](https://frc-docs.readthedocs.io/en/latest/docs/software/wpilib-overview/creating-robot-program.html#creating-a-new-wpilib-project) for starting a new project. Make sure to set the team number to `5024`, Java as your programming language, and `Command Robot` as your template.
+Open Visual Studio Code, and follow [WPIlib's instructions](https://frc-docs.readthedocs.io/en/latest/docs/software/wpilib-overview/creating-robot-program.html#creating-a-new-wpilib-project) for starting a new project. Choose 'Template' when selecting a project type. Make sure to set the team number to `5024`, Java as your programming language, and `Command Robot` 
 
 We will be writing a simple tank drive with two wheels, one on each side of the robot. Here is a visual:
 ![Team 2605's Tank drive visual]({{site.baseurl}}/assets/img/tank-drive.png)
@@ -60,9 +60,9 @@ You now have a blank slate of a class. The `Robot` class is automatically called
 Deciding what to do with a robot is hard. Luckily, our testing robot has some wheels (as described above). So let's write some code to make our bot move.
 
 ## Controls
-Firstly, we should start off with some controls. Our drive team uses Xbox controllers to drive our robots, so we will be writing some code for one of these controllers. To drive our bot, we will be using just a stingle joystick on our Xbox controller. This is not the configuration we use for competitions, but is simpler to teach.
+Firstly, we should start off with some controls. Our drive team uses Xbox controllers to drive our robots, so we will be writing some code for one of these controllers. To drive our bot, we will be using just a stingle joystick on our Xbox controller. This is not the configuration we use for competitions, but it is simpler to teach.
 
-Lets add some code to the Operator Interface file (`src/main/java/frc/robot/OI.java`). This file is where we define every human input.
+Let's add some code to the Operator Interface (OI) file (`src/main/java/frc/robot/OI.java`). This file is where we define every human input.
 ```java
 package frc.robot;
 
@@ -84,18 +84,18 @@ public class OI {
 }
 ```
 
-We start off with out imports.
+Let's start off with out imports.
 ```java
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID;
 ```
-These simply tell the JVM that we will be using the `XboxController` and `GenericHID` helper classes from WPIlib.
+These imports simply tell the JVM that we will be using the `XboxController` and `GenericHID` helper classes from WPIlib.
 
 We need to specify which controller we are reading from (we usually have more than one controller plugged in at a time).
 ```java
 public XboxController m_driverController = new XboxController(0);
 ```
-In this case, we are reading from controller `0`.
+In this case, we are reading from controller `0` (The driver's controller).
 
 Next, we define our `getThrottle` method.
 ```java
@@ -143,12 +143,12 @@ public class DriveTrain extends Subsystem {
 }
 ```
 
-You will also need to add the CTRE vendordep. Feel free to ignore this step until you want to test the code. At that point, ask a returning team member for help.
+You will also need to add the [CTRE vendordep](http://devsite.ctr-electronics.com/maven/release/com/ctre/phoenix/Phoenix-latest.json). To do this, open the command palette using ctrl+shift+P and search "vendor", select "Manage Vendor Libraries", then "Install New Library (Online)", and paste the previous link. See the [vendor dependencies]({{site.baseurl}}/docs/vendordeps) page for more information. Feel free to ignore this step until you want to test the code. At that point, ask a returning team member for help.
 
 The code you have added is just a template, and follows the same style as the Operator Interface. Next, we need to add two motors and link them together. Add the following to the `DriveTrain` method:
 ```java
 left = new WPI_TalonSRX(1);
-right = new WPI_TalonSRX(2);
+right = new WPI_TalonSRX(3);
 
 drive = new DifferentialDrive(left, right);
 drive.setSafetyEnabled(false);
@@ -200,7 +200,7 @@ double rotation = Robot.m_oi.getTurn();
 
 Now, we just need to pass this data to the subsystem we just made. This can be done with the following line. It will call the `arcadeDrive` method we just made, and give it our speed and rotation valuse.
 ```java
-Robot.m_driveTrain.raiderDrive(speed, rotation);
+Robot.m_driveTrain.arcadeDrive(speed, rotation);
 ```
 
 ## Adding the subsystem to the robot
@@ -219,13 +219,22 @@ public static DriveTrain m_driveTrain;
 DriveControl m_driveControl;
 ```
 
-Finally, we need to create the two objects
+Next, we need to create the two objects
 ```java
 m_driveControl = new DriveControl();
 m_driveTrain = new DriveTrain();
 ```
 
 These go under the `m_oi = new OI();` line.
+
+Finally, add the following code to the `teleopInit()` method we created earlier in the `Robot` class:
+```java
+if (m_driveControl != null){
+    m_driveControl.start();
+}
+```
+
+This code checks that `m_driveControl` has not started, and then starts it. Without this, the code we have written will not work.
 
 ## Conclusion
 That's it! You now have your first piece of robot code (and it can actually drive!).
