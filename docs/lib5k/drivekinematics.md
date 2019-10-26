@@ -5,6 +5,7 @@ parent: "Lib5K Reference"
 permalink: /docs/lib5k/drivekinematics
 authors: ['ewpratten']
 ---
+(From java package `lib5k.kinematics`)
 
 # Drivebase Kinematics
 *"Kinematics is a branch of classical mechanics that describes the motion of points, bodies, and systems of bodies without considering the forces that cause them to move"* -[Wikipedia](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=36&cad=rja&uact=8&ved=2ahUKEwjEn-br7rjlAhWLVN8KHd5XAhcQmhMwI3oECAwQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKinematics&usg=AOvVaw3YJtWrMC7FfLS617mwvRLg)
@@ -22,7 +23,7 @@ We need to know three things about the robot.
  - Current heading
  - Circumference of the wheels in meters
 
-With this information, we can get an X, and Y coordinate of the robot in meters by doing the following:
+With this information, we can get an X, and Y coordinate of the robot in meters with the following code:
 ```java
 
 // For storing the robot position
@@ -61,8 +62,8 @@ void loop(){
     double distance = position - lastPos;
 
     // Calculate position
-    x = x + (distance * Math.cos(Math.toRadians(heading)));
-    y = y + (distance * Math.sin(Math.toRadians(heading)));
+    x += (distance * Math.cos(Math.toRadians(heading)));
+    y += (distance * Math.sin(Math.toRadians(heading)));
 
     // re-set the last position
     lastPos = position;
@@ -70,6 +71,19 @@ void loop(){
 
 ```
 
+This example assumes that the robot's heading / angle can be read with `getAngle()`, and each encoder has a method to read it's tick count. If using the tools built in to Lib5K, all of this is handled for you.
+
+#### How it works
+Finding the robot location is realativly simple with the help of some trigonometry. 
+
+![Field diagram with triangle to show how location is calculated](/webdocs/assets/img/loc-diag.jpg)
+
+This diagram roughly demonstrates how location is calculated. In practice, calling the `loop()` method in a loop would generate a very large number of triangles, and provide much greater precision.
+
+The diagram shows the calculation that would be completed if the robot started on HAB1 (at the red angle), and moved to the left rocket, then called `loop()` once. The robot's heading would be treated as *theta* (the red angle), and it's total distance traveled since the last loop as the *hypotenuse*. The labeled `X` and `Y` axis of the right-angled triangle are now the robot's `X,Y` location on the field.
+
 ### Lib5K LocalizationEngine
+Lib5K provides a tool called the `LocalizationEngine`. This tool wil automatically complete the localization calculations, and convert the data to a `FieldPosition` object for easy use with other Lib5K tools and components, like the `MovementPlanner`.
 
 #### Using it in your code
+The `LocalizationEngine` requires some other components to work. The below example will assume you are using a robot similar to [MiniBot](/webdocs/docs/robots/minibot).
