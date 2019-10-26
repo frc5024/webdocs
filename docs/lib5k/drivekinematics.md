@@ -10,7 +10,7 @@ authors: ['ewpratten']
 # Drivebase Kinematics
 *"Kinematics is a branch of classical mechanics that describes the motion of points, bodies, and systems of bodies without considering the forces that cause them to move"* -[Wikipedia](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=36&cad=rja&uact=8&ved=2ahUKEwjEn-br7rjlAhWLVN8KHd5XAhcQmhMwI3oECAwQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKinematics&usg=AOvVaw3YJtWrMC7FfLS617mwvRLg)
 
-Kinematics is very helpful for controlling, and defining robot movement during the autonomous period, and for various other in-game actions. This document will outline how we have integrated both forward, and inverse kinematics into Lib5K, and how to use these features in your robot program.
+Kinematics is very helpful for controlling, and defining robot movement during the autonomous period, along with various other in-game actions. This document will outline how we have integrated both forward, and inverse kinematics into Lib5K, and how to use these features in your robot program.
 
 ## Robot Localization
 Robot localization is the process of locating a robot in 2D or 3D space using a variety of sensors. Think of it like a GPS.
@@ -71,10 +71,10 @@ void loop(){
 
 ```
 
-This example assumes that the robot's heading / angle can be read with `getAngle()`, and each encoder has a method to read it's tick count. If using the tools built in to Lib5K, all of this is handled for you.
+This example assumes that the robot's heading / angle can be read with `getAngle()`, and each encoder has a method to read its tick count. If using the tools built in to Lib5K, all of this is handled for you.
 
 #### How it works
-Finding the robot location is realativly simple with the help of some trigonometry. 
+Finding the robot location is relatively simple with the help of some trigonometry. 
 
 ![Field diagram with triangle to show how location is calculated](/webdocs/assets/img/loc-diag.jpg)
 
@@ -102,7 +102,7 @@ EncoderBase rightEncoder = new GeaBoxEncoder(rightGearbox);
 AHRS gyro = new AHRS(Port.kMXP);
 ```
 
-We will also need to get a `LocalizationEngine` instance to work with
+We additionally will need to get a `LocalizationEngine` instance to work with
 ```java
 // Get the current LocalizationEngine instance
 LocalizationEngine le_instance = LocalizationEngine.getInstance();
