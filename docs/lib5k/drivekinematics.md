@@ -24,14 +24,48 @@ We need to know three things about the robot.
 
 With this information, we can get an X, and Y coordinate of the robot in meters by doing the following:
 ```java
+
+// For storing the robot position
 double x,y = 0.0;
+double lastPos = 0.0;
+
+// Calculate the circumference in meters of the wheels
+// This assumes 6.0 inch wheels on the drivebase
+final double wheelCirc = (6.0 * 0.0254) * Math.PI;
+
+// Number of encoder ticks produced per wheel revolution
+final int ticksPerRev = 720;
 
 /**
- *
+ * Will convert an encoder tick count to a distance traveled in meters
+ */
+double ticksToMeters(int tickCount){
+    return (tickCount / ticksPerRev) * wheelCirc;
+}
+
+/**
+ * This should be called once per 20ms (or the robot periodic loop)
  */
 void loop(){
     // Read the robot's current angle from the gyroscope and bind it by 360 degrees
     double angle = getAngle() % 360;
+
+    // Find the average distance traveled between each side of the robot. This
+    // will give the total Y distance traveled by the robot, accounting for rotation
+    double leftMeters = ticksToMeters(getLeftEncoderTicks());
+    double rightMeters = ticksToMeters(getRightEncoderTicks());
+
+    double position = (leftMeters + rightMeters) / 2.0;
+
+    // Find the distance traveled by the robot since the last time loop() was called
+    double distance = position - lastPos;
+
+    // Calculate position
+    x = x + (distance * Math.cos(Math.toRadians(heading)));
+    y = y + (distance * Math.sin(Math.toRadians(heading)));
+
+    // re-set the last position
+    lastPos = position;
 }
 
 ```
