@@ -49,7 +49,7 @@ double ticksToMeters(int tickCount){
  */
 void loop(){
     // Read the robot's current angle from the gyroscope and bind it by 360 degrees
-    double angle = getAngle() % 360;
+    double heading = getAngle() % 360;
 
     // Find the average distance traveled between each side of the robot. This
     // will give the total Y distance traveled by the robot, accounting for rotation
