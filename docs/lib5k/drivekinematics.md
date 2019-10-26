@@ -87,3 +87,63 @@ Lib5K provides a tool called the `LocalizationEngine`. This tool wil automatical
 
 #### Using it in your code
 The `LocalizationEngine` requires some other components to work. The below example will assume you are using a robot similar to [MiniBot](/webdocs/docs/robots/minibot).
+
+To use the `LocalizationEngine`, the same three sensors from the example above are required. Here, we will define our motors, their encoders, and a Gyroscope object. This code should be part of the DriveTrain subsystem.
+```java
+// Create two gearboxes with encoders attached to the rear motor controllers
+GearBox leftGearbox = new GearBox(new WPI_TalonSRX(1), new WPI_TalonSRX(2), true);
+GearBox rightGearbox = new GearBox(new WPI_TalonSRX31), new WPI_TalonSRX(4), true);
+
+// Create two encoders from each gearbox
+EncoderBase leftEncoder = new GeaBoxEncoder(leftGearbox);
+EncoderBase rightEncoder = new GeaBoxEncoder(rightGearbox);
+
+// Create a gyroscope (this example wil use a NavX)
+AHRS gyro = new AHRS(Port.kMXP);
+```
+
+We will also need to get a `LocalizationEngine` instance to work with
+```java
+// Get the current LocalizationEngine instance
+LocalizationEngine le_instance = LocalizationEngine.getInstance();
+```
+
+The codebase should have these values defined elsewhere (like it's `Constants.java` file), but for this example, we will define a few parameters of the robot here:
+```java
+// Calculate the circumference in meters of the wheels
+// This assumes 6.0 inch wheels on the drivebase
+final double wheelCirc = (6.0 * 0.0254) * Math.PI;
+
+// Number of encoder ticks produced per wheel revolution
+final int ticksPerRev = 720;
+```
+
+Next, in the subsystem's `periodic()` method, or any other constantly looping method, we can update the `LocalizationEngine`
+```java
+@Override 
+public void periodic(){
+    // Get the robot heading
+    double heading = gyro.getAngle();
+
+    // Get each encoder's distance reading
+    double leftMeters = leftEncoder.getMeters(ticksPerRev, wheelCirc);
+    double rightMeters = rightEncoder.getMeters(ticksPerRev, wheelCirc);
+
+    // Update the LocalizationEngine
+    le_instance.calculate(leftMeters, rightMeters, heading);
+}
+```
+
+The robot's position will now be constantly updated. At the start of autonomous, you may want to reset the robot's location. 
+```java
+// Set the robot's field-relitive location in meters.
+// This example uses an X of 0, and a Y of 5 meters.
+// This should be called at the start of each autonomous
+// commandgroup to set the location appropriately.
+le_instance.setRobotPosition(new FieldPosition(0.0, 5.0));
+```
+
+Finally, to read the robot's current location (and heading), the following can be done:
+```java
+FieldPosition currentPosition = le_instance.getRobotPosition();
+```
