@@ -108,7 +108,7 @@ We additionally will need to get a `LocalizationEngine` instance to work with
 LocalizationEngine le_instance = LocalizationEngine.getInstance();
 ```
 
-The codebase should have these values defined elsewhere (like it's `Constants.java` file), but for this example, we will define a few parameters of the robot here:
+The codebase should have these values defined elsewhere (e.g. in the `Constants.java` file), but for this example, we will define a few parameters of the robot here:
 ```java
 // Calculate the circumference in meters of the wheels
 // This assumes 6.0 inch wheels on the drivebase
