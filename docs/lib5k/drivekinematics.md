@@ -13,7 +13,7 @@ authors: ['ewpratten']
 Kinematics is very helpful for controlling, and defining robot movement during the autonomous period, along with various other in-game actions. This document will outline how we have integrated both forward, and inverse kinematics into Lib5K, and how to use these features in your robot program.
 
 ## Robot Localization
-Robot localization is the process of locating a robot in 2D or 3D space using a variety of sensors. Think of it like a GPS.
+Robot localization, a form of forward kinematics, is the process of locating a robot in 2D or 3D space using a variety of sensors. Think of it like a GPS.
 
 ### Localization with an FRC robot
 Assuming a [kitbot](https://www.andymark.com/products/am14u3-kop-chassis)-style drivetrain, we can use three simple sensors, and some trigonometry to determine the robot's location on the field with reasonable precision.
