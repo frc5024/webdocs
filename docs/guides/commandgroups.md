@@ -3,7 +3,7 @@ layout: default
 title: "Command Groups"
 parent: "Guides"
 permalink: /docs/guides/commandgroups
-authors: [catarinaburghi'',''slownie]
+authors: ['catarinaburghi','slownie']
 ---
 
 # Command Groups
