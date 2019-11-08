@@ -19,3 +19,6 @@ This is a common issue on Linux systems due to versioning issues. Generally, the
 
 ## Motors are behiving unexpectadly
 There is a high chance that this is due to motor safety being enabled. To fix this, call the `.setSafetyEnabled(false)` method on all SpeedController, and DifferentialDrive objects related to, or using that motor.
+
+## Robot is spinning in circles when it should be driving forward
+If your robot is spinning in circles when it should be driving forward, try invert the right motor.
