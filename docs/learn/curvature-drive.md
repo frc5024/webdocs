@@ -2,7 +2,7 @@
 layout: default
 title: "Curvature Drive"
 parent: "Learning"
-permalink: /docs/learn/curv
+permalink: /docs/learn/curvature-drive
 authors: ['hyperliskdev']
 ---
 
@@ -23,10 +23,9 @@ Curvature drive is a type of drive just like Arcade or Tank drive. Curvature dri
 
 ```java
 
-# Inside of my drivetrain class.
+// Inside DriveTrain.java (hyperliskdev/HyperBot)
+
 public void curvDrive(double speed, double rotation, boolean isQuickTurn) {
-    isMoving = (speed != 0.0);
-    isTurning = (rotation != 0.0);
 
     m_DifferentialDrive.curvatureDrive(speed, rotation, isQuickTurn);
     
@@ -53,14 +52,15 @@ Inside the drive controller class:
     speed = m_speedDeadband.feed(speed);
     rotation = m_rotationDeadband.feed(rotation);
 
+    // Calling the function created in DriveTrain.java
     Robot.m_driveTrain.curvDrive(speed, rotation, isQuickTurn);
 
   }
 
 ```
 
-getTrigger will set the speed to the 0 --> 1 vaule it outputs <br>
-getRotation get the x axis of the right joystick values from -1 --> 0 --> 1 <br>
+getTrigger will return a value from 0 --> 1 based on how far down the trigger is pressed. <br>
+getRotation will return a value from -1 --> 0 --> 1, based on where the joystick is in relation to the center <br>
 quickTurn will let the Robot turn without speed. <br>
 
 If quickTurn is not enabled, the robot will not turn unless it is moving.
