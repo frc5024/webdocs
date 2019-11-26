@@ -3,7 +3,7 @@ layout: default
 title: "Network Tables"
 parent: "Learning"
 permalink: /docs/learn/networktables
-authors: ["wm-c", "rsninja722", "catarinaburghi"]
+authors: ["wm-c", "rsninja722", "catarinaburghi", "ewpratten"]
 ---
 
 ## What is A Network Table
@@ -29,8 +29,6 @@ The data must be stored as boolean with double precision, numeric, or string. Yo
 
 ## Example
 ```java
-package edu.wpi.firstwpilibj.templates;
-
 import edu.wpi.first.wpilibj.timedrobot;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableEntry;
