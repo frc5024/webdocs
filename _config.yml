@@ -15,7 +15,7 @@ theme: just-the-docs
 aux_links:
   "Edit on GitHub":
     - "https://github.com/frc5024/webdocs"
-  
+
 color_scheme: nil
 
 exclude: [ "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "LICENSE.txt","README.md", "Rakefile", "OLD/"]
