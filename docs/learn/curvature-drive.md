@@ -20,12 +20,11 @@ A real-world example of constant-curvature control is a car. A car's ability to 
 This graph depicts the left, and right motor outputs over the robot's velocity with a constant turning factor.
 
 
-## Cheesy Drive?
+## Cheesy Drive
 
-Developed by Team 254, Cheesy Drive's earliest recorded use case is in the 2014 source code for the game Aerial Assist. Cheesy Drive sparked the interest of WPI and they implemented a version of it, calling it simply Curvature Drive. It appears they built a Helper class to explain what Cheesy Drive is and to do math on what power to send to the PWM.
+Developed by Team 254, Cheesy Drive's earliest recorded use case is in the 2014 source code for the game Aerial Assist. Cheesy Drive sparked the interest of WPI and they implemented a version of it, calling it simply Curvature Drive. 
 
-
-The 2016 CheesyPoofs code explains curvature drive in a very simplistic way.
+This following snippet from the CheesyPoofs' 2016 codebase explains cheesy drive in a very simplistic way.
 
 ``` java
 /**
