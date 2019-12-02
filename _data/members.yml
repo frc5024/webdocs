@@ -16,10 +16,8 @@ awpratten:
   is_lead: false
   is_mentor: true
   github: awpratten
-
-
+  
 # Members
-
 ewpratten:
   name: Evan Pratten
   is_lead: true
