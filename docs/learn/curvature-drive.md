@@ -3,7 +3,7 @@ layout: default
 title: "Curvature Drive"
 parent: "Learning"
 permalink: /docs/learn/curvature-drive
-authors: ['hyperliskdev']
+authors: ['hyperliskdev', 'ewpratten']
 ---
 
 # Constant Curvature Drive
@@ -11,11 +11,13 @@ authors: ['hyperliskdev']
 Curvature Drive is a method inside of DifferentialDrive that is similar to Arcade Drive or Tank Drive. All of these methods complete the same basic function; sending information's to the motors on how much to move and in which direction. 
 
 ## What does constant curvature mean?
-Constant Curvature drive is different than arcade drive mainly because of what the name entails. The main goal of Constant Curvature Drive is to control curvature instead of rate-of-change, like in Arcade Drive. Arcade drive, it is possible to turn on the spot. Inversely, Curvature Drive you can. 
+Constant Curvature drive controls the robot path's curvature instead of its rate-of-change, like ArcadeDrive does. In ArcadeDrive, it is possible for the robot to turn on the spot. Whereas, with curvature drive, this is not possible.
 
-In a car, dependant on how fast you're going will determine how quickly you are able to turn. going slower leading to a slower turning speed and faster you can turn more quickly. This is what curvature drive is replicating.
+A real-world example of constant-curvature control is a car. A car's ability to turn is dependant on it's velocity. The same is true of curvature drive.
 
 ![Constant-curvature graph]
+
+This graph depicts the left, and right motor outputs over the robot's velocity with a constant turning factor.
 
 
 ## Cheesy Drive?
