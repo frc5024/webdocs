@@ -41,71 +41,51 @@ This following snippet from the CheesyPoofs' 2016 codebase explains cheesy drive
 Curvature Drive could be use in many places. Strategy wise, Curvature Drive is best suited for getting across the field as fast as possible. Its usability at higher speeds makes it great for putting the pedal to the metal and the availability of quickTurn makes it great when making small adjustments to placement of game pieces.  
 
 ## How do I use it?
-Since the implementation into DifferentialDrive, it is as easy as using arcadeDrive. 
-
-First step is to make a method in your drivetrain class.
-``` java
-
-  // Curvature Drive Mode
-  public void curvDrive(double speed, double rotation, boolean isQuickTurn) {
-    isMoving = (speed != 0.0);
-    isTurning = (rotation != 0.0);
-
-    m_DifferentialDrive.curvatureDrive(speed, rotation, isQuickTurn);
-    
-  }
-
-```
-
-Step two, create varibles inside drive controller class.
-
-``` java 
-
-public class DriveControl extends Command {
-
-    // Movement vectors
-  double speed, rotation = 0.0;
-  boolean isQuickTurn;
-
- //...
- // Called repeatedly when this Command is scheduled to run
-  @Override
-  protected void execute() {
-
-
-    // Main vars for driving.
-    speed = Robot.m_oi.getTriggerLeftThrottle();
-    rotation = Robot.m_oi.getRotation();
-    isQuickTurn = Robot.m_oi.getQuickTurn();
-
-```
-
-
-Step three, call the curvature drive method inside drive control.
+Constant-curvature drive control can be integrated into a robot via one of two methods:
 
 ``` java
+// Using the DifferentialDrive helper
+public void curvatureDrive(double speed, double rotation, boolean isQuickTurn) {
+    DifferentialDrive.curvatureDrive(speed, rotation, isQuickTurn);
+}
 
-// Called repeatedly when this Command is scheduled to run
-  @Override
-  protected void execute() {
+// Implementing it yourself
+public void curvatureDrive(double speed, double rotation, boolean isQuickTurn){
 
-
-    // Main vars for driving.
-    speed = Robot.m_oi.getTriggerLeftThrottle();
-    rotation = Robot.m_oi.getRotation();
-    isQuickTurn = Robot.m_oi.getQuickTurn();
+    // Clamp inputs
+    speed = Math.max(-1., Math.min(speed, 1.));
+    rotation = Math.max(-1., Math.min(rotation, 1.));
     
-    // Deadbanding stuff
-    // speed = m_speedDeadband.feed(speed);
-    rotation = m_rotationDeadband.feed(rotation);
+    // Calculate constant-curvature vs rate-of-change based on QuickTurn
+    double leftSpeed;
+    double rightSpeed;
 
-    Robot.m_driveTrain.curvDrive(speed, rotation, isQuickTurn);
-    
-  }
+    if (isQuickurn){
 
+        // Rate-of-change calculation
+        leftSpeed = speed + rotation;
+        rightSpeed = speed - rotation;
+    } else {
+
+        // Constant-curvature calculation
+        leftSpeed = speed + Math.abs(speed) * rotation;
+        rightSpeed = speed - Math.abs(speed) * rotation;
+    }
+
+    // Normalize wheel speeds
+    double maxMagnitude = Math.max(Math.abs(leftSpeed), Math.abs(rightSpeed));
+    if (maxMagnitude > 1.0) {
+        leftSpeed /= maxMagnitude;
+        rightSpeed /= maxMagnitude;
+    }
+
+    // Send speeds to motors here
+    ...
+
+} 
 ```
 
-Deploy and ``` winGame(); ```
+Just like any other subsystem method, this method can be called from a command to allow driver control, or for autonomous use.
 
 <!--- Images --->
 [Constant-curvature graph]: /webdocs/assets/img/const-control.png
