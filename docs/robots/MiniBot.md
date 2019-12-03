@@ -37,7 +37,13 @@ The encoders have `360` ticks per revolution.
 | Gyro position offset (front to back) | 17.78 cm to the rear of robot |
 
 
+## Robot Photo
+![robot]
+
+
 ## Notes
 On the roborio used on this bot, there are a few broken IO pins:
  - Digital 2
  - Digital 3
+
+[robot]: /webdocs/assets/img/minibot.jpg
