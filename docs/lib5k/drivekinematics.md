@@ -13,7 +13,7 @@ authors: ['ewpratten']
 Kinematics is very helpful for controlling, and defining robot movement during the autonomous period, along with various other in-game actions. This document will outline how we have integrated both forward, and inverse kinematics into Lib5K, and how to use these features in your robot program.
 
 ## Robot Localization
-Robot localization, a form of forward kinematics, is the process of locating a robot in 2D or 3D space using a variety of sensors. Think of it like a GPS.
+Robot localization, a form of [forward kinematics](https://en.wikipedia.org/wiki/Forward_kinematics), is the process of locating a robot in 2D or 3D space using a variety of sensors. Think of it like a GPS.
 
 ### Localization with an FRC robot
 Assuming a [kitbot](https://www.andymark.com/products/am14u3-kop-chassis)-style drivetrain, we can use three simple sensors, and some trigonometry to determine the robot's location on the field with reasonable precision.
@@ -147,3 +147,13 @@ Finally, to read the robot's current location (and heading), the following can b
 ```java
 FieldPosition currentPosition = le_instance.getRobotPosition();
 ```
+
+## Path following
+As long as there is a reliable way to determine the robot's location on the field, we can build a simple, real-time pathing system. This form of [inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) is fairly common among autonomous path-following systems built by top tier FRC teams like [254](https://github.com/Team254/FRC-2019-Public/blob/master/src/main/java/com/team254/frc2019/Kinematics.java), and [1114](https://bitbucket.org/kaleb_dodd/simbot2019public/src/abc56f5220b5c94bca216f86e3b6b5757d0ffeff/src/main/java/frc/io/SensorInput.java#lines-154:181).
+
+### Point-to-Point movement
+We know [where we are](#localization-with-an-frc-robot), and can easily define where we want to be with the help of a `FieldPosition`. With these two points, and some some basic control theory, we can instruct the robot to move smoothly between the two. Effectively forming a path.
+
+To do this, we ___.
+
+### The MovementPlanner

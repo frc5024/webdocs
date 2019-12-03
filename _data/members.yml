@@ -16,10 +16,8 @@ awpratten:
   is_lead: false
   is_mentor: true
   github: awpratten
-
-
+  
 # Members
-
 ewpratten:
   name: Evan Pratten
   is_lead: true
@@ -39,7 +37,7 @@ slownie:
   github: slownie
 
 beardedfish:
-  name: Darian Benam 
+  name: Darian Benam
   is_lead: false
   is_mentor: false
   github: beardedfish
@@ -51,10 +49,10 @@ faceincake:
   github: faceincake
 
 parsa-salimi :
-  name: Parsa Salimi 
+  name: Parsa Salimi
   is_lead: false
   is_mentor: false
-  github: parsa-salimi 
+  github: parsa-salimi
 
 hyperliskdev:
   name: Carter Tomlenovich
@@ -66,7 +64,7 @@ rsninja722 :
   name: James Nickoli
   is_lead: false
   is_mentor: false
-  github: rsninja722 
+  github: rsninja722
 
 catarinaburghi:
   name: Catarina Burghi
