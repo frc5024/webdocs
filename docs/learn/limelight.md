@@ -21,7 +21,7 @@ Use four 10-32 screws of 1 1/4" length and four nylock nuts to mount your Limeli
 Run two wires from your Limelight to a slot on your PDP, and add a 5A breaker. Finally, run an ethernet cable from your Limelight to your radio.
 
 ## Networking
-Give the Limelight and a team number through its web interface at http://limelight.local:5801. 
+Give the Limelight and a team number through its web interface at http://limelight.local:5801. The IP address for the Limelight is 10.50.24.11:5801.
 
 # Programming
 Although the Limelight handles the vision process, we still need the data from it. Read the document on [Network Tables](/docs/learn/networking-tables) to understand the programming section.
@@ -46,3 +46,6 @@ double area = ta.getDouble(0.0);
 SmartDashboard.putNumber("LimelightX", x);
 SmartDashboard.putNumber("LimelightY", y);
 SmartDashboard.putNumber("LimelightArea", area);
+```
+For more information on the Limelight documentation, [click here]({http://docs.limelightvision.io/en/latest/}).
+
