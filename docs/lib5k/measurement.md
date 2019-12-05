@@ -30,8 +30,9 @@ Measurement.YD;
 
 In essence, the conversion method converts `value`, in `units_from`, into millimeters, and then from millimeters into the desired `units_to`.
 
-##Example Usage
-```Java
+## Example Usage
+
+```java
 System.out.println(Measurement.convert(200, Measurement.CM, Measurement.M)); //Prints "2"
 
 //OR if used with a static import
