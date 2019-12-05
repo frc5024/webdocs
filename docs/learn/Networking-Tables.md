@@ -6,7 +6,7 @@ permalink: /docs/learn/networktables
 authors: ["wm-c", "rsninja722", "catarinaburghi", "ewpratten"]
 ---
 
-## What is A Network Table
+# What is A Network Table
 A Network Table is a table of values that can be access by multiple devices over a network.
 
 Data in a Network Table is arranged with a key and value
