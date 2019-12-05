@@ -3,7 +3,7 @@ layout: default
 title: "Limelight"
 parent: "Learning"
 permalink: /docs/learn/limelight
-authors: ['slownie']
+authors: ['slownie', 'ewpratten']
 ---
 
 # What is a Limelight?
@@ -27,7 +27,7 @@ Give the Limelight and a team number through its web interface at http://limelig
 The raw MJPEG video stream can be found on port `5800`.
 
 # Programming
-Although the Limelight handles the vision process, we still need the data from it. Read the document on [Network Tables](/docs/learn/networking-tables) to understand the programming section.
+Although the Limelight handles the vision process, we still need the data from it. Read the document on [Network Tables]({{site.baseurl}}/docs/learn/networktables) to understand the programming section.
 
 ``` java
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -50,5 +50,5 @@ SmartDashboard.putNumber("LimelightX", x);
 SmartDashboard.putNumber("LimelightY", y);
 SmartDashboard.putNumber("LimelightArea", area);
 ```
-For more information on the Limelight documentation, [click here]({http://docs.limelightvision.io/en/latest/}).
+For more information on the Limelight documentation, [click here](http://docs.limelightvision.io/en/latest/).
 
