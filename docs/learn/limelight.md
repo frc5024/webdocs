@@ -19,9 +19,12 @@ Use four 10-32 screws of 1 1/4" length and four nylock nuts to mount your Limeli
 
 ## Wiring
 Run two wires from your Limelight to a slot on your PDP, and add a 5A breaker. Finally, run an ethernet cable from your Limelight to your radio.
+You could also run two wires to your PDP, and run an ethernet cable to your radio.
 
 ## Networking
 Give the Limelight and a team number through its web interface at http://limelight.local:5801. The IP address for the Limelight is 10.50.24.11:5801.
+
+The raw MJPEG video stream can be found on port `5800`.
 
 # Programming
 Although the Limelight handles the vision process, we still need the data from it. Read the document on [Network Tables](/docs/learn/networking-tables) to understand the programming section.
