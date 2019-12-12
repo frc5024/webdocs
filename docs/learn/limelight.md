@@ -24,31 +24,38 @@ You could also run two wires to your PDP, and run an ethernet cable to your radi
 ## Networking
 Give the Limelight and a team number through its web interface at http://limelight.local:5801. The IP address for the Limelight is 10.50.24.11:5801.
 
-The raw MJPEG video stream can be found on port `5800`.
+The raw MJPEG video stream
+
+
+
+
+
+
+ can be found on port `5800`.
 
 # Programming
-Although the Limelight handles the vision process, we still need the data from it. Read the document on [Network Tables]({{site.baseurl}}/docs/learn/networktables) to understand the programming section.
-
+Although the Limelight handles the vision process, we still need the data from it. Lib5k's limelight component handles all the Networktable work.
 ``` java
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
+import frc.lib5k.components.Limelight;
 
-NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
-NetworkTableEntry tx = table.getEntry("tx");
-NetworkTableEntry ty = table.getEntry("ty");
-NetworkTableEntry ta = table.getEntry("ta");
+Limelight light = new Limelight();
 
-//read values periodically
-double x = tx.getDouble(0.0);
-double y = ty.getDouble(0.0);
-double area = ta.getDouble(0.0);
+//read if target is visible
+boolean isVisible = Limelight.isTargetVisible();
 
-//post to smart dashboard periodically
+//capture snapshot of target
+LimelightTarget target = LimeLight.getTarget();
+
+//read data from target
+double x = target.getX();
+double y = target.getY();
+double s = target.getSkew();
+
+//post to smart dashboard
+SmartDashboard.putNumber("LimelightVisibility", isVisible);
 SmartDashboard.putNumber("LimelightX", x);
 SmartDashboard.putNumber("LimelightY", y);
-SmartDashboard.putNumber("LimelightArea", area);
+SmartDashboard.putNumber("LimelightS", s);
 ```
 For more information on the Limelight documentation, [click here](http://docs.limelightvision.io/en/latest/).
 
