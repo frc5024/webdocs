@@ -20,5 +20,5 @@ HATCHfield was our robot for the 2019 season.
 ## Robot Photo
 ![robot]
 
-[robot]: /webdocs/assets/img/HATCHfield.png
+[robot]: /webdocs/assets/img/hatchfield.jpg
 {:width="250px"}
