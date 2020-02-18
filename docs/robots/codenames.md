@@ -18,3 +18,4 @@ In the time between kickoff and revealing the official name of our robot, the pr
 | SamIsSuperior | [MiniBot]({{site.baseurl}}/docs/robots/minibot) |
 | DarianIsDaring | [MiniBot 2.0]({{site.baseurl}}/docs/robots/minibot) |
 | CarterIsChaotic | ??? |
+| ThisOneIsNamedAfterSilas | ??? |
