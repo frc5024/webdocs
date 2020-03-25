@@ -12,7 +12,7 @@ Occasionally, it is useful to truly parallelize two pieces of code. For our usec
 Some multithreaded components of our robot code are:
  - The `robotPeriodic` loop
  - The `RobotLogger`'s output handling
- - The `SubsystemLooper` and, by proxy, all periodic methods of any `LoopableSubsystem`
+ - The `SubsystemLooper` and, by proxy, all periodic methods of any `LoopableSubsystem` *This is no longer used*
 
 When working on these systems, it is important to understand how to write threaded code for our robots.
 

@@ -23,7 +23,7 @@ This is a list of the primary WPILib classes used in robot programming:
 
  - [Scheduler](https://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/command/Scheduler.html) - scheduling a command
  - [Command](https://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/command/Command.html) - the basic framework for all commands
- - [Subsystem](https://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/command/Subsystem.html) - a container for sensors, motors and pneumatics actuators. Keep in mind that we use our own LoopableSubsystem
+ - [Subsystem](https://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/command/Subsystem.html) - a container for sensors, motors and pneumatics actuators.
 
 ### Operator Input (OI) Layer
 
