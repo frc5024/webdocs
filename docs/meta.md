@@ -33,7 +33,7 @@ authors: ['ewpratten']
 
 The start and end of a header are defined by three dashes.
 
-The layout must be `default`. Title is what shows in the nvigation bar, and permalink is the url for this page. Change these to match the page you are writing. 
+The layout must be `default`. Title is what shows in the navigation bar, and permalink is the url for this page. Change these to match the page you are writing. 
 The `nav_order` variable is the order this item appears in the navigation bar. Generally, put new pages at the bottom of the list.
 
 To create a folder in the nav bar, create a folder inside of the `docs/` folder, and make a file with the same name inside that folder. This file acts at the table of contents for that folder, and must have an extra line in it's header:

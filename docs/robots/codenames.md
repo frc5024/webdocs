@@ -17,5 +17,5 @@ In the time between kickoff and revealing the official name of our robot, the pr
 | ParsaIsPreferable | 2019 Practice bot |
 | SamIsSuperior | [MiniBot]({{site.baseurl}}/docs/robots/minibot) |
 | DarianIsDaring | [MiniBot 2.0]({{site.baseurl}}/docs/robots/minibot) |
-| CarterIsChaotic | ??? |
+| CarterIsChaotic | [Darth Raider]({{site.baseurl}}/docs/robots/darthRaider) |
 | ThisOneIsNamedAfterSilas | ??? |
