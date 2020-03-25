@@ -27,7 +27,8 @@ AGyroExample(){
     gyro.registerAngleCallback(this::onAngleChange);
 
     // Register a callback for motion
-    // Define anything over 2 degrees as "motion"
+    // Define anything over 2 degrees per ms as "motion"
+    // This number is probably too big for IRL use, but is fine for demonstration
     gyro.registerMotionCallback(this::onMotion, 2.0);
 }
 
