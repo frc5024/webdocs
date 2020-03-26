@@ -7,7 +7,7 @@ authors: ['ewpratten']
 ---
 
 # CommandBased Programming
-We use a modified version of WPIlib's CommandBase code structure. The first half of this guide will explain CommandBase to 1st and 2nd year programmers. With small corrections were we have changed functionality. The second half will explain our changes. This guide is partially based off of a guide from the [Toronto Coding Collective](https://www.torontocodingcollective.com).
+We use WPIlib's CommandBase code structure. The first half of this guide will explain CommandBase to 1st and 2nd year programmers. The second half of this guide will explain how to implement them. This guide is partially based off of a guide from the [Toronto Coding Collective](https://www.torontocodingcollective.com).
 
 ## Objective of the Command Based Robot
 
@@ -54,62 +54,98 @@ In general, each command runs until it ends, or until it is interrupted by anoth
 
 All currently active commands in the robot are called at approx 50Hz, or once every 20ms.  
 
-## Our modifications
-Much like a command, our subsystems are designed to run in their own loop. When programming the robot, make sure to use an `frc.lib5k.loops.loopables.LoopableSubsystem` class instead of the standard `edu.wpi.first.wpilibj.command.Subsystem`. The `LoopableSubsystem` will automatically handle it's loops in the background. Any code that reads from a sensor should happen in the `periodicInput` method, and any code that writes to an output should happen in the `periodicOutput` method.
 
-An example `LoopableSubsystem` might look like this:
+## Implementation
+There are two seperate classes need to make a command and a subsystem to make a command a programmer must extend `edu.wpi.first.wpilibj2.command.CommandBase` in the class they wish to make a command, To create a subsystem the class must extend `edu.wpi.first.wpilibj2.command.SubsystemBase`. This gives access to the methods needed to create a functioning command and a functioning subsystem.
+
+
+An example `SubsystemBase` might look like this:
 ```java
 package frc.robot.subsystems;
 
-import frc.lib5k.loops.loopables.LoopableSubsystem;
-import frc.lib5k.utils.RobotLogger;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.OI;
+import edu.wpi.first.wpilibj.Talon;
 
 
-public class MySubsystem extends LoopableSubsystem {
-    RobotLogger logger = RobotLogger.getInstance();
-    public static MySubsystem m_instance = null;
+public class ExampleSubsystem extends SubsystemBase{
+    private static ExampleSubsystem instance = null;
+    private OI oi = OI.getInstance();
+    Talon talon1;
 
-    public MySubsystem() {
-        // Subsystem should be initialized here
+    // Code made when subsystem is created
+    private ExampleSubsystem(){
+        talon1 = new Talon(0);
     }
 
-    /**
-     * This is required for every Subsystem
-     */
-    public static MySubsystem getInstance() {
-        if (m_instance == null) {
-            m_instance = new MySubsystem();
+    // Create a Singleton
+    public static ExampleSubsystem getInstance(){
+
+        if(instance == null){
+            instance = new ExampleSubsystem();
+
+            return instance;
         }
 
-        return m_instance;
+        return instance;
     }
 
+    // Creates a Periodic loop that runs at 50hz
     @Override
-    public void periodicOutput() {
-        // Here should be code that makes components move        
-    }
-
-    public void periodicInput() {
-       // Here should be code that reads from any required sensor(s)
-    }
-
-    @Override
-    public void outputTelemetry() {
-        // Here should be code that pushes telemetry data to SmartDashboard
-    }
-
-    @Override
-    public void stop() {
-        // Here should be code that stops any moving component controlled by this subsystem
-    }
-
-    @Override
-    public void reset() {
-        stop();
-        // Here should be code that resets all sensors needed by this subsystem
+    public void periodic(){
+        // Checks OI to see if motor should be on
+        if(oi.shouldTurnOn()){
+            talon1.set(.5);
+        }else{
+            talon1.stopMotor();
+        }
     }
 
 }
 ```
+To register this Subsystem, the Subsystem instance must have it the register method called on it.
 
-To register this `LoopableSubsystem` with the `SubsystemLooper`, the Subsystem instance must be passed to the `register` method of the `SubsystemLooper`.
+
+An example `CommandBase` might look like this:
+```java
+package frc.robot.subsystems;
+
+import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj2.command.CommandBase;
+
+
+public class ExampleCommand extends CommandBase{
+    Talon talon1 = new Talon(0);
+
+    
+    // When the command starts set safety to false
+    @Override
+    public void initialize() {
+        talon1.setSafetyEnabled(false);
+    }
+
+    // Each loop increase the motor speed by .1
+    @Override
+    public void execute() {
+        talon1.setSpeed(talon1.getSpeed() + .1);
+    }
+
+    // When the commands end set speed to zero and enable safety
+    @Override
+    public void end(boolean interrupted) {
+        talon1.setSpeed(0);
+        talon1.setSafetyEnabled(true);
+    }
+
+    // if the motor is at 1 speed stop the command, otherwise continue
+    @Override
+    public boolean isFinished() {
+        if(talon1.getSpeed() == 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+}
+```
