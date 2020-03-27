@@ -17,16 +17,4 @@ All callbacks are handled by Java11's `Runnable` and `Consumer<T>` types. It is 
 
 ## Installation
 
-AsyncHAL is a standard java library that can be installed by making a slight modification to your project's `build.gradle` file. First, add the following line to your project's `repositories` block. If there is none, make one with `repositories{}`.
-
-```groovy
-// Add Jitpack maven source
-maven { setUrl("https://jitpack.io") }
-```
-
-Next, declare the dependance in your project's `dependencies` block with:
-
-```groovy
-// AsyncHAL
-implementation 'com.github.frc5024:asynchal:master-SNAPSHOT'
-```
+AsyncHAL is a [Lib5K Extension](/webdocs/docs/lib5k). Follow the instructions on the Lib5K page to install it.
