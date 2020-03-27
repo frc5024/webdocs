@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lib5K Reference
+title: Lib5K
 nav_order: 4
 has_children: true
 permalink: /docs/lib5k

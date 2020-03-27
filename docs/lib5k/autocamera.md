@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AutoCamera"
-parent: "Lib5K Reference"
+parent: "Lib5K"
 permalink: /docs/lib5k/autocamera
 authors: ['ewpratten']
 ---

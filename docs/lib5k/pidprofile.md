@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "PIDProfile"
-parent: "Lib5K Reference"
+parent: "Lib5K"
 permalink: /docs/lib5k/pidprofile
 authors: ['ewpratten']
 ---

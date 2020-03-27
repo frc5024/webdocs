@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Measurement"
-parent: "Lib5K Reference"
+parent: "Lib5K"
 permalink: /docs/lib5k/measurement
 authors: ['exvacuum']
 ---
