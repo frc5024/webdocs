@@ -47,7 +47,7 @@ The following extensions are available for use, and can be installed by adding t
   
 ## Using the old Lib5K
 
-If your project still relies on the old Lib5K, you can load the legacy library as an extension wit the following:
+If your project still relies on the old Lib5K, you can load the legacy library as an extension with the following:
 ```groovy
 implementation 'com.github.frc5024:lib5k-legacy:master-SNAPSHOT'
 ```
