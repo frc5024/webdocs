@@ -44,3 +44,12 @@ The following extensions are available for use, and can be installed by adding t
  - PurePursuit ([GitHub](https://github.com/frc5024/PurePursuit))
    - Adds a [Pure Pursuit](https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf) controller, and path generation tools
    - `implementation 'com.github.frc5024:purepursuit:master-SNAPSHOT`
+  
+## Using the old Lib5K
+
+If your project still relies on the old Lib5K, you can load the legacy library as an extension wit the following:
+```groovy
+implementation 'com.github.frc5024:lib5k-legacy:master-SNAPSHOT'
+```
+
+Keep in mind this is no longer maintained.
