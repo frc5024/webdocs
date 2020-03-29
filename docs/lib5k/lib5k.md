@@ -34,16 +34,27 @@ implementation 'com.github.frc5024:lib5k-core:master-SNAPSHOT'
 // ...
 ```
 
+### Reloading Lib5K
+
+If a change has been made to Lib5K or an extension upstream, you must run the following command in your project:
+
+```sh
+./gradlew build --refresh-dependencies
+```
+
 ### Available extensions
 
 The following extensions are available for use, and can be installed by adding their respective implementation declarations to your project's `build.gradle` file.
 
- - AsyncHAL ([GitHub](https://github.com/frc5024/AsyncHAL)) ([Webdocs](https://cs.5024.ca/webdocs/docs/libraries/asynchal))
+ - AsyncHAL ([GitHub](https://github.com/frc5024/AsyncHAL)) ([docs](https://cs.5024.ca/AsyncHAL))
    - Adds callback support to common sensors
    - `implementation 'com.github.frc5024:asynchal:master-SNAPSHOT'`
- - PurePursuit ([GitHub](https://github.com/frc5024/PurePursuit))
+ - PurePursuit ([GitHub](https://github.com/frc5024/PurePursuit)) ([docs](https://cs.5024.ca/PurePursuit))
    - Adds a [Pure Pursuit](https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf) controller, and path generation tools
    - `implementation 'com.github.frc5024:purepursuit:master-SNAPSHOT`
+ - HardwareAccess ([GitHub](https://github.com/frc5024/HardwareAccess)) ([docs](https://cs.5024.ca/HardwareAccess))
+   - Contains all wrappers and classes for interfacing with robot hardware
+   - `implementation 'com.github.frc5024:hardwareaccess:master-SNAPSHOT`
   
 ## Using the old Lib5K
 
