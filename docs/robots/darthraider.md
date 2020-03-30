@@ -50,5 +50,5 @@ With help from our amazing mentors:
 
 Robot design, wiring, and construction were handled by the respective 5024 sub-teams.
 
-[robot]: /webdocs/assets/img/darthRaider.png
+[robot]: /webdocs/assets/img/darthraider.png
 {:width="250px"}
