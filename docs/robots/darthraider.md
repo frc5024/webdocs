@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Darth Raider"
+parent: "Our Robots"
+permalink: /docs/robots/darthRaider
+authors: ['ewpratten', 'wm-c']
+nav_order: -8
+---
+
+# Darth Raider
+Darth Raider is our 2020 competition robot, designed for the game [Infinite Recharge](https://en.wikipedia.org/wiki/Infinite_Recharge).
+
+ - [Code](https://github.com/frc5024/InfiniteRecharge)
+ - [Documentation](http://frc5024.github.io/InfiniteRecharge/)
+
+
+## Robot Photo
+![robot]
+
+## Robot features
+
+Darth raider is a high-scoring robot designed to quickly get around the field. Three cameras are used for aiming, and a collection of drivebase sensors are used to localize the robot at all times. This allows darth raider to run real-time autonomous paths, and respond to it's environment. All actions are fully automated to let the drivers focus on scoring, not small tasks like sorting balls.
+
+
+## Robot operation guide
+
+Instructions on operating this robot can be found here:
+
+[Operation guide](https://github.com/frc5024/InfiniteRecharge/blob/master/docs/operation.md){: .btn }
+
+## The team
+
+This robot was programmed by the following 5024 software developers:
+
+ - @ewpratten
+ - @slownie
+ - @hyperliskdev
+ - @rsninja722
+ - @exvacuum
+ - @wm-c
+ - @catarinaburghi
+ - @Keatonion
+ - @PTV7777
+ - @srjacks
+
+With help from our amazing mentors:
+
+ - @johnlownie
+ - @awpratten
+
+Robot design, wiring, and construction were handled by the respective 5024 sub-teams.
+
+[robot]: /webdocs/assets/img/darthRaider.png
+{:width="250px"}
