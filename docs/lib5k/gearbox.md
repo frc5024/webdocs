@@ -25,7 +25,7 @@ This will create, and connect to both motor controllers, automatically configure
 Limiting the maximum output current of a motor is very useful. It allows systems to operate together without browning out the robot. To configure current limiting on a GearBox, use the `limitCurrent` method.
 ```java
 // Configure the current limits with a trigger of 32Amps, a hold at 30Amps, and a duration of 15
-myGreabox.limitCurrent(32, 30, 15);
+myGearbox.limitCurrent(32, 30, 15);
 ```
 
 The peak / trigger current is the number of [Amperes](https://en.wikipedia.org/wiki/Ampere) the system must draw before the limiter takes effect.
