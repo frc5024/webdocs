@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Tutorials"
-parent: "tutorials"
-permalink: /docs/tutorials/Tutorials
+has_children: true
+permalink: /docs/tutorials/
 authors: ['wm-c']
 nav_order: 1
 ---
