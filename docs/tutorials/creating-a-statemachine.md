@@ -154,6 +154,21 @@ public ClawSystem( ... ){
 }
 ```
 
+## Running the state machine
+
+We now need to run the state machine. We can do this by calling the state machines `update` method in the subsystems periodic loop.
+
+```java
+// Subsystem periodic looper
+@override
+public void periodic(){
+
+    // every loop update the state machine
+    stateMachine.update();
+}
+```
+
+
 Now, we must fill in the `grabItem` and `stop` functions that were stubbed:
 
 ```java
@@ -204,6 +219,16 @@ public class ClawSystem extends SubsystemBase{
         stateMachine.addState(ClawSystemStates.ACCEPTING, this::handleAccepting);
     }
 
+    // Subsystem periodic looper
+    @override
+    public void periodic(){
+
+        // every loop update the state machine
+        stateMachine.update();
+    }
+
+
+
     // Methods for controlling this system
     public void grabItem(){
         stateMachine.setState(ClawSystemStates.ACCEPTING);
@@ -236,8 +261,10 @@ public class ClawSystem extends SubsystemBase{
         }
     }
 
+
+
 }
 
 ```
 
-For any member that was on the team for the 2020 season, yes. This is the same setup we used for Darth Raider. Just cleaner, and with fewer bugs. (I think :rofl:)
+For any member that were on the team for the 2020 season, yes. This is the same setup we used for Darth Raider. Just cleaner, and with fewer bugs. (I think :rofl:)
