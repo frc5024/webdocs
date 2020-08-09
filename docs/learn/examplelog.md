@@ -13,49 +13,53 @@ We like logs. A lot. Here are some example logs from various situations.
 ## Robot Boot
 
 ```
-********** Robot program starting **********
-Robot starting...
-Welcome 5024!
-Current time: 0.0346
-ROBOT: Starting CameraServer
-CS: USB Camera 0: Connecting to USB camera on /dev/video0
-CS: USB Camera 0: set format 1 res 320x180
-CS: USB Camera 0: Connecting to USB camera on /dev/video0
-CS: USB Camera 0: set format 1 res 320x240
-CS: USB Camera 0: set FPS to 15
-Main Camera initialized on TCP port 1184
-ROBOT: Constructing Subsystems
-ROBOT: [DriveTrain] Constructing GearBoxes out of motor pairs
-NT: server: client CONNECTED: 127.0.0.1 port 36058
-ROBOT: [DriveTrain] Limiting current on both gearboxes. Peak: 35A, Hold: 33A, Timeout: 33ms
-ROBOT: [DriveTrain] Drivebase has been set to: Unsafe
-ROBOT: [DriveTrain] Loading gyro for drivetrain
-ROBOT: [DriveTrain] Gyro has been reset to: 0.0
-ROBOT: [Ledring] Constructing "solenoid" for led control
-ROBOT: [Slider] Constructing WPI_TalonSRX for slider
-ROBOT: [Slider] Constructing Hall effect sensors for slider
-ROBOT: [Slider] Configuring PID for slider
-ROBOT: [Slider] Set PID gains to: 1.0P, 0.0I, 0.0D
-ROBOT: [Finger] Constructing solenoid
-ROBOT: [Piston] Constructing solenoid
-ROBOT: [Compressor] Constructing Compressor class
-ROBOT: [Flap] Constructing solenoid
-ROBOT: Initializing Subsystems
-ROBOT: Constructing Superstructure
-ROBOT: [Vision] Starting monitor thread
-ROBOT: Constructing Commands
-ROBOT: Setting up Notifiers
-ROBOT: FieldStatusThread Starting
-ROBOT: [ConnectionMonitor] Started monitoring driverstation connection
-ROBOT: Starting vision thread
-ROBOT: Setting NetworkTables period time to: 0.01
-LIBRARY: Main Camera's connection mode has been set to: Stay Awake
-INFO: [DriveTrain] NeutralMode has been set to: Brake
-ROBOT: Robot Disabled
-Current time: 0.0346
-INFO: [DriveTrain] NeutralMode has been set to: Coast
-ROBOT: [ConnectionMonitor] The robot has lost connection!
-INFO: [Ledring] Wanted state set to: kStrobe
+INFO at 0.36s: io.github.frc5024.lib5k.examples.autonomous_path_following.Main::<init>() -> Adding autonomous paths
+INFO at 0.38s: io.github.frc5024.lib5k.autonomous.RobotProgram::addAutonomous() -> Added autonomous sequence: ForwardOneMeter
+INFO at 0.38s: io.github.frc5024.lib5k.hardware.ni.roborio.FaultReporter::handleRailStatuses() -> 3v3 Rail Enabled
+DEBUG at 0.87s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+INFO at 0.87s: io.github.frc5024.lib5k.logging.USBLogger::update() -> A CMOD occured
+DEBUG at 0.89s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 0.91s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 0.93s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 0.95s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 0.97s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 0.99s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.01s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.03s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.05s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.07s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.09s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.10s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.13s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.13s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+DEBUG at 1.15s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+INFO at 1.16s: io.github.frc5024.lib5k.autonomous.RobotProgram::disabledInit() -> Robot disabled
+INFO at 1.17s: io.github.frc5024.lib5k.examples.autonomous_path_following.Main::disabled() -> Stopping drivetrain
+DEBUG at 1.17s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+INFO at 1.17s: io.github.frc5024.lib5k.examples.autonomous_path_following.Main::disabled() -> Stopping drivetrain
+DEBUG at 1.17s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+INFO at 1.17s: io.github.frc5024.common_drive.DriveTrainBase::stop() -> Stopped DriveTrain
+DEBUG at 1.18s: io.github.frc5024.common_drive.DriveTrainBase::runIteration() -> DriveTrain.periodic() has not yet been run by the scheduler... waiting
+INFO at 1.26s: io.github.frc5024.common_drive.DriveTrainBase::handleOpenLoopControl() -> Switched to open-loop control
+INFO at 8.15s: io.github.frc5024.lib5k.autonomous.RobotProgram::autonomousInit() -> Autonomous started
+INFO at 8.16s: io.github.frc5024.lib5k.autonomous.RobotProgram::autonomousInit() -> Starting autonomous sequence: ForwardOneMeter
+INFO at 8.21s: io.github.frc5024.lib5k.hardware.ni.roborio.FaultReporter::update() -> Robot FPGA outputs have been enabled
+INFO at 8.21s: io.github.frc5024.common_drive.DriveTrainBase::setPose() -> Setting pose to: Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+INFO at 8.22s: io.github.frc5024.common_drive.commands.PathFollowCommand::initialize() -> Reset path follower
+INFO at 8.22s: io.github.frc5024.common_drive.commands.PathFollowCommand::initialize() -> Opening a CSV logfile to save path progress to
+INFO at 8.23s: io.github.frc5024.common_drive.DriveTrainBase::setActiveSide() -> Set active side to: kPrimary
+INFO at 8.27s: io.github.frc5024.common_drive.DriveTrainBase::handleRabbitChase() -> Switched to 'rabbit chase' mode
+INFO at 8.27s: io.github.frc5024.common_drive.DriveTrainBase::handleRabbitChase() -> Position goal is: Translation2d(X: 0.15, Y: 0.00)
+INFO at 8.27s: io.github.frc5024.common_drive.DriveTrainBase::handleRabbitChase() -> Switching to default gear
+INFO at 9.08s: io.github.frc5024.common_drive.commands.PathFollowCommand::end() -> Robot successfully reached goal pose: Translation2d(X: 1.00, Y: 0.00)
+INFO at 9.08s: io.github.frc5024.common_drive.DriveTrainBase::setActiveSide() -> Set active side to: kPrimary
+INFO at 9.08s: io.github.frc5024.common_drive.DriveTrainBase::stop() -> Stopped DriveTrain
+INFO at 9.08s: io.github.frc5024.common_drive.commands.PathFollowCommand::end() -> Saving CSV logfile
+INFO at 9.09s: io.github.frc5024.common_drive.DriveTrainBase::handleOpenLoopControl() -> Switched to open-loop control
+INFO at 10.89s: io.github.frc5024.lib5k.autonomous.RobotProgram::disabledInit() -> Robot disabled
+INFO at 10.90s: io.github.frc5024.lib5k.examples.autonomous_path_following.Main::disabled() -> Stopping drivetrain
+INFO at 10.90s: io.github.frc5024.common_drive.DriveTrainBase::stop() -> Stopped DriveTrain
+INFO at 10.93s: io.github.frc5024.lib5k.hardware.ni.roborio.FaultReporter::update() -> Robot FPGA outputs have been disabled
 ```
 
 ## CAN errors due to running in simulation mode instead of on a RoboRIO
